@@ -13,8 +13,11 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import oracle.jdbc.OracleConnection;
-
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import org.postgresql.*;
 /**
  *
  * @author Meluzin
@@ -22,13 +25,13 @@ import oracle.jdbc.OracleConnection;
 public class testFilterSpeed {
     
     
-    private String host = "localhost";
-    private int port = 1521;
-    private String dbName = "db";
-    private String user = "test";
-    private String pass = "pass";
+    private String host = "192.168.0.51";
+    private int port = 5432;
+    private String dbName = "postgres";
+    private String user = "postgres";
+    private String pass = "postgres";
     
-    OracleConnection conn = null;
+    Connection conn = null;
     
     private String tableName;
     private String coloumns;
@@ -60,12 +63,18 @@ public class testFilterSpeed {
     
     
     // connect to db
-    public OracleConnection getDbConnection() {
+    public Connection getDbConnection() {
         
         if (conn == null) {
-            System.out.println("COnnectiong to DB.");
+            //System.out.println("COnnectiong to DB.");
             try {
-                conn = (OracleConnection) DriverManager.getConnection("jdbc:oracle:thin:@"+host+":"+port+":"+dbName+"", user, pass);
+                try {
+                    Class.forName("org.postgresql.Driver");
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(testFilterSpeed.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                conn = DriverManager.getConnection("jdbc:postgresql://"+host+":"+port+"/"+dbName+"", user, pass);
+                conn.setAutoCommit(false);
             } catch (SQLException e) {
                 System.out.println("Connection Failed! Check output console");
                 e.printStackTrace();
@@ -74,6 +83,23 @@ public class testFilterSpeed {
         }
 
         return conn;
+    }
+    
+    
+    public void executeComand(String comand) {
+        
+        if (getDbConnection() != null) {
+            try {
+                Statement stmt = null;
+                stmt = conn.createStatement();
+                stmt.executeUpdate(comand);
+            } catch (SQLException ex) {
+                Logger.getLogger(testFilterSpeed.class.getName()).log(Level.SEVERE, null, ex);
+            } finally {
+                System.out.println("Ok");
+            }
+        }
+        
     }
     
     public void disconectDb() {
@@ -106,7 +132,7 @@ public class testFilterSpeed {
         
         // priprava sql
         String selectTableSQL = "SELECT "+coloumns+" from "+tableName;
-        System.out.println("SQL:"+selectTableSQL);
+        //System.out.println("SQL:"+selectTableSQL);
         
         Statement statement = null;
         
@@ -161,7 +187,7 @@ public class testFilterSpeed {
         }
         
         // priprava sql
-        String where = coloumn+" ";
+        String where = coloumn+"::text ";
         switch (condition) {
             case like:
                 where += "LIKE '%"+value+"%'";
@@ -178,7 +204,7 @@ public class testFilterSpeed {
         }
         
         String selectTableSQL = "SELECT "+coloumns+" from "+tableName+ " WHERE "+where;
-        System.out.println("SQL:"+selectTableSQL);
+        //System.out.println("SQL:"+selectTableSQL);
         
         Statement statement = null;
         
@@ -238,7 +264,6 @@ public class testFilterSpeed {
             }
         }
         
-        System.out.println("Cnt: "+itemsFiltred);
         long end_time = System.nanoTime();
         return (end_time - start_time);
     }
