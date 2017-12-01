@@ -28,7 +28,7 @@ public class TestApp {
         String dbName = args[7];
         String user = args[8];
         String pass = args[9];
-        int pocetOpakovani = 15;
+        int pocetOpakovani = 10;
         
         // Get typ filtrace
         testFilterSpeed.conditionType filterType = null;
