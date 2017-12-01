@@ -1,0 +1,27 @@
+echo 1 > /proc/sys/vm/drop_caches; 
+echo 2 > /proc/sys/vm/drop_caches; 
+echo 3 > /proc/sys/vm/drop_caches; 
+rcpostgresql stop; 
+rcpostgresql start;
+
+
+
+
+sync; /etc/init.d/postgresql-9.0 stop; echo 1 > /proc/sys/vm/drop_caches; /etc/init.d/postgresql-9.0 start
+
+
+
+
+echo 1 > /proc/sys/vm/drop_caches; 
+echo 2 > /proc/sys/vm/drop_caches; 
+echo 3 > /proc/sys/vm/drop_caches; 
+rcpostgresql stop; 
+rcpostgresql start;
+
+
+
+
+sync; /etc/init.d/postgresql stop; 
+echo 1 > /proc/sys/vm/drop_caches; 
+/etc/init.d/postgresql start
+
