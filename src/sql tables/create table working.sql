@@ -1,6 +1,6 @@
-CREATE SEQUENCE tenmiliontable_seq;
-CREATE TABLE tenmiliontable(
-   seq       DECIMAL NOT NULL PRIMARY KEY DEFAULT nextval('tenmiliontable_seq')
+CREATE SEQUENCE rows100_seq;
+CREATE TABLE rows100(
+   seq       DECIMAL NOT NULL PRIMARY KEY DEFAULT nextval('rows100_seq')
   ,first     VARCHAR(20) NOT NULL
   ,last      VARCHAR(20) NOT NULL
   ,age       INTEGER  NOT NULL
@@ -23,4 +23,4 @@ CREATE TABLE tenmiliontable(
   ,bool      VARCHAR(5) NOT NULL
   ,yn        VARCHAR(1) NOT NULL
 );
-ALTER SEQUENCE tenmiliontable_seq OWNED BY tenmiliontable.seq;
+ALTER SEQUENCE rows100_seq OWNED BY rows100.seq;
