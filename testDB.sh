@@ -22,3 +22,6 @@ java -cp ./lib/postgresql-9.4.1209.jar: -jar ./dist/testApp.jar 100 "id" LIKE 1 
 ./clearcache.sh
 
 java -cp ./lib/postgresql-9.4.1209.jar: -jar ./dist/testApp.jar 100 "id" LIKE 1 "id, name" JAVA 192.168.0.51 postgres postgres postgres >> output.txt
+
+
+
