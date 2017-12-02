@@ -85,7 +85,7 @@ public class TestApp {
         else if (by.equalsIgnoreCase("JAVA")) {
             
             // Ziskani dat z db
-            long time = tester.getDataFromDb("rows"+rowNum, "id, name");
+            long time = tester.getDataFromDb("rows"+rowNum, coloumns);
             
             long firstTime = tester.filterByJava(coloumn, filterType, value);
             long numOfItems = tester.getJavaFiltredItemsCnt();
