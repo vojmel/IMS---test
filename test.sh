@@ -6,6 +6,10 @@ extention=".csv";
 
 arrayType=("DB" "JAVA")
 
+likeArray=("LIKE")
+
+likeNumberArray=( 1 5 )
+
 
 # Tables ---------------------
 arrayLines=( 	
@@ -59,28 +63,32 @@ searchRow="seq";
 
 
 
-
-for r in "${arrayRam[@]}"
+for like in "${likeArray[@]}"
 do
-	m='M' 
-	ram="-Xmx$r$m"
-
-	for type in "${arrayType[@]}"
+	for likeNumber in "${likeNumberArray[@]}"
 	do
-		outfile="./output/$type-output-$r$extention";
-		touch $outfile;
-
-		echo "File $outfile"
-
-		for currentTable in "${arrayLines[@]}"
+		for r in "${arrayRam[@]}"
 		do
-			echo "clearing cache";
-			./clearcache.sh
+			m='M' 
+			ram="-Xmx$r$m"
 
-			echo "$outfile - current table is: $currentTable";
-			# echo "Executing with: $ram current table is: $currentTable" >> output.txt;
-			java $ram -cp ./lib/postgresql-9.4.1209.jar: -jar ./dist/testApp.jar $currentTable "$searchRow" LIKE 1 "$columns" $type $serverip postgres postgres postgres >> $outfile;
+			for type in "${arrayType[@]}"
+			do
+				outfile="./output/$type-$like-$likeNumber-$r$extention";
+				touch $outfile;
+
+				echo "File $outfile"
+
+				for currentTable in "${arrayLines[@]}"
+				do
+					echo "clearing cache";
+					./clearcache.sh
+
+					echo "$outfile - current table is: $currentTable";
+					# echo "Executing with: $ram current table is: $currentTable" >> output.txt;
+					java $ram -cp ./lib/postgresql-9.4.1209.jar: -jar ./dist/testApp.jar $currentTable "$searchRow" $like $likeNumber "$columns" $type $serverip postgres postgres postgres >> $outfile;
+				done
+			done
 		done
 	done
 done
-
