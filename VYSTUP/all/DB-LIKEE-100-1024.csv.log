@@ -1,0 +1,16 @@
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.HashMap.resize(HashMap.java:704)
+	at java.util.HashMap.putVal(HashMap.java:629)
+	at java.util.HashMap.put(HashMap.java:612)
+	at testapp.Item.<init>(Item.java:44)
+	at testapp.testFilterSpeed.processSQLResult(testFilterSpeed.java:283)
+	at testapp.testFilterSpeed.getDataFromDb(testFilterSpeed.java:149)
+	at testapp.TestApp.main(TestApp.java:63)
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.HashMap.newNode(HashMap.java:1747)
+	at java.util.HashMap.putVal(HashMap.java:642)
+	at java.util.HashMap.put(HashMap.java:612)
+	at testapp.Item.<init>(Item.java:44)
+	at testapp.testFilterSpeed.processSQLResult(testFilterSpeed.java:283)
+	at testapp.testFilterSpeed.getDataFromDb(testFilterSpeed.java:149)
+	at testapp.TestApp.main(TestApp.java:63)
