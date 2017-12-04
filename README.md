@@ -31,3 +31,6 @@ LIKE;                          Operace filtrace (ještě máme LIKES LIKEE EQEUA
 20;                             Počet nalezených záznamů
 992142;                     Doba první filtrace
 89075                        Průměrná doba filtrace po 15 pokusech
+
+
+sed -i -e 's/\r$//' 
