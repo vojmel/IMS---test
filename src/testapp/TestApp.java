@@ -15,7 +15,7 @@ public class TestApp {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // rows_num    columnName   operace_porovnani   hodnota   vycet_vsech_sloupcu  [DB|JAVA]  host dbName user pass
+        // rows_num    columnName   operace_porovnani   hodnota   vycet_vsech_sloupcu  [DB|JAVA]  host dbName user pass  RAM
         //vojta.java 10000 "col1" LIKE "1" [DB|JAVA] localhost postgres postgres postgres 
 
         int rowNum = new Integer(args[0]);
@@ -28,6 +28,7 @@ public class TestApp {
         String dbName = args[7];
         String user = args[8];
         String pass = args[9];
+        String ram = args[10];
         int pocetOpakovani = 10;
         
         // Get typ filtrace
@@ -79,7 +80,7 @@ public class TestApp {
             // odpojeni db
             tester.disconectDb();
 
-            System.out.println("DB;"+rowNum+";"+coloumn+";"+operation+";"+value+";"+numOfItems+";"+firstTime+";"+avgTime);
+            System.out.println(ram+";DB;"+rowNum+";"+coloumn+";"+operation+";"+value+";"+numOfItems+";"+firstTime+";"+avgTime);
         }
         // Porovnava JAVA
         else if (by.equalsIgnoreCase("JAVA")) {
@@ -104,7 +105,7 @@ public class TestApp {
             // odpojeni db
             tester.disconectDb();
         
-            System.out.println("JAVA;"+rowNum+";"+coloumn+";"+operation+";"+value+";"+numOfItems+";"+firstTime+";"+avgTime);
+            System.out.println(ram+";JAVA;"+rowNum+";"+coloumn+";"+operation+";"+value+";"+numOfItems+";"+firstTime+";"+avgTime);
         }
         else {
             System.out.println("Wrong filtration type: "+by+" use DB or JAVA");
