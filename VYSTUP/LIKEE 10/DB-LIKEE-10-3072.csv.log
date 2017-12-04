@@ -1,0 +1,9 @@
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.lang.Long.toString(Long.java:399)
+	at java.math.BigDecimal.layoutChars(BigDecimal.java:3428)
+	at java.math.BigDecimal.toString(BigDecimal.java:2884)
+	at java.lang.String.valueOf(String.java:2994)
+	at testapp.Item.<init>(Item.java:44)
+	at testapp.testFilterSpeed.processSQLResult(testFilterSpeed.java:283)
+	at testapp.testFilterSpeed.getDataFromDb(testFilterSpeed.java:149)
+	at testapp.TestApp.main(TestApp.java:63)
