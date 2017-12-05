@@ -247,7 +247,7 @@ public class testFilterSpeed {
         }
         
         String selectTableSQL = "SELECT "+coloumns+" from "+tableName+ " WHERE "+where;
-        System.out.println("SQL: "+selectTableSQL);
+        //System.out.println("SQL: "+selectTableSQL);
         
         Statement statement = null;
         
