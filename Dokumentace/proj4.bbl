@@ -1,0 +1,51 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{typograficky_manual}
+Beran, V.: Typografický manuál. 1994, ISBN 80-901824-0-2, 25--30 s.
+
+\bibitem{dipl_martin_cerny}
+Černý, M.: \emph{Znakové sady v typografických systémech}. Diplomová
+  práce, Mendelova zemědělská a~lesnická univerzita v Brně, 1999.
+
+\bibitem{bibtex_alex}
+Feder, A.: [online]. 2006 [vid.~2016-04-18].
+\newline\urlprefix\url{http://www.bibtex.org}
+
+\bibitem{latex_kompletni_pruvodce}
+Helmut~Kopka, P. W.~D.: \emph{\LaTeX \- podrobný provodce}, kapitola~4.
+  Computer Press, třetí vydání, 2004, ISBN 80-722-6973-9, s. 50--60.
+
+\bibitem{jak_publikovat_napocitaci}
+Ing. Petr~Hanáček, I. P.~P.: \emph{Jak publikovat na počítači},
+  kapitola~1. Sience, první vydání, 1996, ISBN 80-901475-7-7, str.~13.
+
+\bibitem{dipl_michal_janda}
+Janda, M.: \emph{Uživatelsky pokročilý databázový systém pro správu
+  referencí typu BibTex}. Diplomová práce, Mendelova univerzita v Brně,
+  Provozně ekonomická fakulta, 2011.
+
+\bibitem{computer_casopis}
+Jiří~Kuruc, P.~S.: Dolejte inkoust! In \emph{Computer}, ročník 4|2016,
+  Praha: CPress Media, 2016, ISBN 1210-8790, s. 38--41.
+
+\bibitem{typografia_cz}
+Lelek, M.: Krátce ze zahraničí. In \emph{Typografia}, Digirama s.r.o., 2014,
+  ISBN 0322-9068, s. 10--12.
+
+\bibitem{repronis_foto}
+Repronis: [online]. [vid.~2016-04-18].
+\newline\urlprefix\url{http://www.repronis.cz/navody/clanek/205-Jak-na-rozliseni-fotografii.html}
+
+\bibitem{vsellis}
+vsellis: [online]. [cit.~2013-02-01] [vid.~2016-04-18].
+\newline\urlprefix\url{http://www.vsellis.com/understanding-dpi-resolution-and-print-vs-web-images/}
+
+\end{thebibliography}
