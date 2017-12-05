@@ -61,8 +61,6 @@ public class TestApp {
         if (by.equalsIgnoreCase("DB")) {
             
             // Ziskani dat z db poprve
-            long time = tester.getDataFromDb("rows"+rowNum, coloumns);
-            
             long firstTime = tester.filterByDb(coloumn, filterType, value);
             long numOfItems = tester.getItemsCnt();
             
