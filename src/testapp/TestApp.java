@@ -60,6 +60,10 @@ public class TestApp {
         // Porovnova db
         if (by.equalsIgnoreCase("DB")) {
             
+            
+            tester.setColoumns(coloumns);
+            tester.setTableName("rows"+rowNum);
+            
             // Ziskani dat z db poprve
             long firstTime = tester.filterByDb(coloumn, filterType, value);
             long numOfItems = tester.getItemsCnt();

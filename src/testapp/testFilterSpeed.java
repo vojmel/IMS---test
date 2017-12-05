@@ -59,6 +59,49 @@ public class testFilterSpeed {
         this.user = user;
         this.pass = pass;
     }
+
+    public void setHost(String host) {
+        this.host = host;
+    }
+
+    public void setPort(int port) {
+        this.port = port;
+    }
+
+    public void setDbName(String dbName) {
+        this.dbName = dbName;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public void setPass(String pass) {
+        this.pass = pass;
+    }
+
+    public void setConn(Connection conn) {
+        this.conn = conn;
+    }
+
+    public void setTableName(String tableName) {
+        this.tableName = tableName;
+    }
+
+    public void setColoumns(String coloumns) {
+        this.coloumns = coloumns;
+    }
+
+    public void setItems(ArrayList<Item> items) {
+        this.items = items;
+    }
+
+    public void setItemsFiltred(ArrayList<Item> itemsFiltred) {
+        this.itemsFiltred = itemsFiltred;
+    }
+    
+    
+    
     
     
     
