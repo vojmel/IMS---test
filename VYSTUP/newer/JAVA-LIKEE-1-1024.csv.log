@@ -1,0 +1,14 @@
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at testapp.testFilterSpeed.processSQLResult(testFilterSpeed.java:283)
+	at testapp.testFilterSpeed.getDataFromDb(testFilterSpeed.java:149)
+	at testapp.TestApp.main(TestApp.java:89)
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.math.BigDecimal.valueOf(BigDecimal.java:1202)
+	at org.postgresql.jdbc.PgResultSet.getFastBigDecimal(PgResultSet.java:2271)
+	at org.postgresql.jdbc.PgResultSet.getBigDecimal(PgResultSet.java:2335)
+	at org.postgresql.jdbc.PgResultSet.internalGetObject(PgResultSet.java:192)
+	at org.postgresql.jdbc.PgResultSet.getObject(PgResultSet.java:2581)
+	at testapp.Item.<init>(Item.java:41)
+	at testapp.testFilterSpeed.processSQLResult(testFilterSpeed.java:283)
+	at testapp.testFilterSpeed.getDataFromDb(testFilterSpeed.java:149)
+	at testapp.TestApp.main(TestApp.java:89)

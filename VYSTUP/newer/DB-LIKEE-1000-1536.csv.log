@@ -1,0 +1,18 @@
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.HashMap.newNode(HashMap.java:1747)
+	at java.util.HashMap.putVal(HashMap.java:642)
+	at java.util.HashMap.put(HashMap.java:612)
+	at testapp.Item.<init>(Item.java:44)
+	at testapp.testFilterSpeed.processSQLResult(testFilterSpeed.java:283)
+	at testapp.testFilterSpeed.getDataFromDb(testFilterSpeed.java:149)
+	at testapp.TestApp.main(TestApp.java:64)
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at org.postgresql.core.Encoding.decode(Encoding.java:187)
+	at org.postgresql.core.Encoding.decode(Encoding.java:198)
+	at org.postgresql.jdbc.PgResultSet.getString(PgResultSet.java:1919)
+	at org.postgresql.jdbc.PgResultSet.internalGetObject(PgResultSet.java:202)
+	at org.postgresql.jdbc.PgResultSet.getObject(PgResultSet.java:2581)
+	at testapp.Item.<init>(Item.java:41)
+	at testapp.testFilterSpeed.processSQLResult(testFilterSpeed.java:283)
+	at testapp.testFilterSpeed.getDataFromDb(testFilterSpeed.java:149)
+	at testapp.TestApp.main(TestApp.java:64)
