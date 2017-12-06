@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.27)  6 DEC 2017 20:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.27)  6 DEC 2017 23:58
 entering extended mode
 **./proj4.tex
 (proj4.tex
@@ -597,113 +597,108 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 [2] [1]
-<images/f1-100-75k.png, id=19, 530.73282pt x 392.96812pt>
-File: images/f1-100-75k.png Graphic file (type png)
-<use images/f1-100-75k.png>
-Package pdftex.def Info: images/f1-100-75k.png  used on input line 60. on input
+<images/n1-100-75k.png, id=19, 480.29437pt x 392.96812pt>
+File: images/n1-100-75k.png Graphic file (type png)
+<use images/n1-100-75k.png>
+Package pdftex.def Info: images/n1-100-75k.png  used on input line 60. on input
  line 60.
-Package pdftex.def Info: Requested size: 284.52756pt x 210.67058pt on input lin
+Package pdftex.def Info: Requested size: 284.52756pt x 232.79657pt on input lin
 e 60.
-<images/f10-100-75k.png, id=20, 529.98pt x 392.21532pt>
-File: images/f10-100-75k.png Graphic file (type png)
-<use images/f10-100-75k.png>
-Package pdftex.def Info: images/f10-100-75k.png  used on input line 65. on inpu
-t line 65.
-Package pdftex.def Info: Requested size: 284.52756pt x 210.56624pt on input lin
+<images/n1-75k-2kk.png, id=20, 479.54156pt x 392.96812pt>
+File: images/n1-75k-2kk.png Graphic file (type png)
+<use images/n1-75k-2kk.png>
+Package pdftex.def Info: images/n1-75k-2kk.png  used on input line 65. on input
+ line 65.
+Package pdftex.def Info: Requested size: 284.52756pt x 233.16234pt on input lin
 e 65.
-<images/f100-100-75k.png, id=21, 529.98pt x 391.4625pt>
-File: images/f100-100-75k.png Graphic file (type png)
-<use images/f100-100-75k.png>
-Package pdftex.def Info: images/f100-100-75k.png  used on input line 70. on inp
-ut line 70.
-Package pdftex.def Info: Requested size: 284.52756pt x 210.16208pt on input lin
+<images/n10-100-75k.png, id=21, 481.04718pt x 391.4625pt>
+File: images/n10-100-75k.png Graphic file (type png)
+<use images/n10-100-75k.png>
+Package pdftex.def Info: images/n10-100-75k.png  used on input line 70. on inpu
+t line 70.
+Package pdftex.def Info: Requested size: 284.52756pt x 231.54623pt on input lin
 e 70.
-<images/f1000-100-75k.png, id=22, 529.98pt x 390.70969pt>
-File: images/f1000-100-75k.png Graphic file (type png)
-<use images/f1000-100-75k.png>
-Package pdftex.def Info: images/f1000-100-75k.png  used on input line 75. on in
-put line 75.
-Package pdftex.def Info: Requested size: 284.52756pt x 209.75792pt on input lin
+<images/n10-75k-2kk.png, id=22, 481.04718pt x 391.4625pt>
+File: images/n10-75k-2kk.png Graphic file (type png)
+<use images/n10-75k-2kk.png>
+Package pdftex.def Info: images/n10-75k-2kk.png  used on input line 75. on inpu
+t line 75.
+Package pdftex.def Info: Requested size: 284.52756pt x 231.54623pt on input lin
 e 75.
- [2 <./images/f1-100-75k.png> <./images/f10-100-75k.png>]
-<images/f1-75k-2kk.png, id=26, 530.73282pt x 390.70969pt>
-File: images/f1-75k-2kk.png Graphic file (type png)
-<use images/f1-75k-2kk.png>
-Package pdftex.def Info: images/f1-75k-2kk.png  used on input line 81. on input
- line 81.
-Package pdftex.def Info: Requested size: 284.52756pt x 209.45984pt on input lin
-e 81.
-<images/f10-75k-2kk.png, id=27, 529.98pt x 392.21532pt>
-File: images/f10-75k-2kk.png Graphic file (type png)
-<use images/f10-75k-2kk.png>
-Package pdftex.def Info: images/f10-75k-2kk.png  used on input line 86. on inpu
-t line 86.
-Package pdftex.def Info: Requested size: 284.52756pt x 210.56624pt on input lin
-e 86.
- [3 <./images/f100-100-75k.png> <./images/f1000-100-75k.png>]
-<images/f100-75k-2kk.png, id=31, 529.98pt x 391.4625pt>
-File: images/f100-75k-2kk.png Graphic file (type png)
-<use images/f100-75k-2kk.png>
-Package pdftex.def Info: images/f100-75k-2kk.png  used on input line 92. on inp
-ut line 92.
-Package pdftex.def Info: Requested size: 284.52756pt x 210.16208pt on input lin
-e 92.
- [4 <./images/f1-75k-2kk.png> <./images/f10-75k-2kk.png>]
-<images/f1000-75k-2kk.png, id=35, 529.98pt x 390.70969pt>
-File: images/f1000-75k-2kk.png Graphic file (type png)
-<use images/f1000-75k-2kk.png>
-Package pdftex.def Info: images/f1000-75k-2kk.png  used on input line 97. on in
-put line 97.
-Package pdftex.def Info: Requested size: 284.52756pt x 209.75792pt on input lin
-e 97.
- [5 <./images/f100-75k-2kk.png>]
-LaTeX Font Info:    Try loading font information for IL2+cmtt on input line 112
-.
+ [2 <./images/n1-100-75k.png> <./images/n1-75k-2kk.png>]
+<images/n100-100-75k.png, id=26, 478.03593pt x 391.4625pt>
+File: images/n100-100-75k.png Graphic file (type png)
+<use images/n100-100-75k.png>
+Package pdftex.def Info: images/n100-100-75k.png  used on input line 80. on inp
+ut line 80.
+Package pdftex.def Info: Requested size: 284.52756pt x 232.99774pt on input lin
+e 80.
+<images/n100-75k-2kk.png, id=27, 478.03593pt x 391.4625pt>
+File: images/n100-75k-2kk.png Graphic file (type png)
+<use images/n100-75k-2kk.png>
+Package pdftex.def Info: images/n100-75k-2kk.png  used on input line 85. on inp
+ut line 85.
+Package pdftex.def Info: Requested size: 284.52756pt x 232.99774pt on input lin
+e 85.
+ [3 <./images/n10-100-75k.png> <./images/n10-75k-2kk.png>]
+<images/n1000-100-75k.png, id=31, 483.30562pt x 391.4625pt>
+File: images/n1000-100-75k.png Graphic file (type png)
+<use images/n1000-100-75k.png>
+Package pdftex.def Info: images/n1000-100-75k.png  used on input line 90. on in
+put line 90.
+Package pdftex.def Info: Requested size: 284.52756pt x 230.46509pt on input lin
+e 90.
+<images/n1000-75k-2kk.png, id=32, 483.30562pt x 391.4625pt>
+File: images/n1000-75k-2kk.png Graphic file (type png)
+<use images/n1000-75k-2kk.png>
+Package pdftex.def Info: images/n1000-75k-2kk.png  used on input line 95. on in
+put line 95.
+Package pdftex.def Info: Requested size: 284.52756pt x 230.46509pt on input lin
+e 95.
+ [4 <./images/n100-100-75k.png> <./images/n100-75k-2kk.png>]
+<images/Petri-net-1.png, id=36, 712.16063pt x 368.87813pt>
+File: images/Petri-net-1.png Graphic file (type png)
+<use images/Petri-net-1.png>
+Package pdftex.def Info: images/Petri-net-1.png  used on input line 109. on inp
+ut line 109.
+Package pdftex.def Info: Requested size: 426.79134pt x 221.06403pt on input lin
+e 109.
+ [5 <./images/n1000-100-75k.png> <./images/n1000-75k-2kk.png>]
+<images/Petri-net-2.png, id=42, 829.59938pt x 411.78844pt>
+File: images/Petri-net-2.png Graphic file (type png)
+<use images/Petri-net-2.png>
+Package pdftex.def Info: images/Petri-net-2.png  used on input line 115. on inp
+ut line 115.
+Package pdftex.def Info: Requested size: 426.79134pt x 211.84406pt on input lin
+e 115.
+ [6 <./images/Petri-net-1.png> <./images/Petri-net-2.png>] [7] (proj4.bbl
+LaTeX Font Info:    Try loading font information for IL2+cmtt on input line 13.
 
 ("C:\Program Files\MiKTeX 2.9\tex\cslatex\base\il2cmtt.fd"
 File: il2cmtt.fd 1997/08/20 CSLaTeX font definitions
-)
-LaTeX Font Info:    Try loading font information for IL2+cmss on input line 113
-.
-
-("C:\Program Files\MiKTeX 2.9\tex\cslatex\base\il2cmss.fd"
-File: il2cmss.fd 1997/02/13 CsLaTeX font definitions
-) [6 <./images/f1000-75k-2kk.png>] [7] (proj4.bbl
-Overfull \hbox (13.44144pt too wide) in paragraph at lines 92--94
-\IL2/cmr/m/n/10.95 URL  $\IL2/cmtt/m/n/10.95 <[]http : / / www . vsellis . com 
-/ understanding-[]dpi-[]resolution-[]and-[]print-[]vs-[]web-[]images /
- []
-
-) [8] (proj4.aux) ) 
+)) [8] (proj4.aux) ) 
 Here is how much of TeX's memory you used:
- 4517 strings out of 493312
- 65560 string characters out of 3138898
- 138245 words of memory out of 3000000
- 7973 multiletter control sequences out of 15000+200000
- 16487 words of font info for 41 fonts, out of 3000000 for 9000
+ 4491 strings out of 493312
+ 64959 string characters out of 3138898
+ 136205 words of memory out of 3000000
+ 7953 multiletter control sequences out of 15000+200000
+ 12969 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,5n,40p,589b,269s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\pu
-blic\csfonts\dpi600\csti8.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk
-\ljfour\public\csfonts\dpi600\csr8.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9
-\fonts\pk\ljfour\public\csfonts\dpi657\cscsc10.pk> <C:\Users\olovo\AppData\Loca
-l\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi657\cssl10.pk> <C:\Users\olovo\A
-ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi657\csti10.pk> <C:\Us
-ers\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi657\csss10
-.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dp
-i657\cstt10.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public
-\csfonts\dpi600\csbx12.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\lj
-four\public\csfonts\dpi657\csr10.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\f
-onts\pk\ljfour\public\csfonts\dpi657\csbx10.pk> <C:\Users\olovo\AppData\Local\M
-iKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi720\csbx12.pk> <C:\Users\olovo\AppD
-ata\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi864\csr17.pk> <C:\Users\
-olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi600\csr17.pk> 
-<C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi1244
-\cscsc10.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cs
-fonts\dpi1493\cscsc10.pk>
-Output written on proj4.pdf (10 pages, 262407 bytes).
+ 42i,5n,40p,589b,271s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\p
+ublic\csfonts\dpi657\cstt10.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\
+pk\ljfour\public\csfonts\dpi600\csbx12.pk> <C:\Users\olovo\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\public\csfonts\dpi657\csr10.pk> <C:\Users\olovo\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi657\csbx10.pk> <C:\Users\olovo
+\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi720\csbx12.pk> <C:\
+Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi864\csr1
+7.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\d
+pi600\csr17.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public
+\csfonts\dpi1244\cscsc10.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\public\csfonts\dpi1493\cscsc10.pk>
+Output written on proj4.pdf (10 pages, 265832 bytes).
 PDF statistics:
- 542 PDF objects out of 1000 (max. 8388607)
+ 414 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
