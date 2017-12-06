@@ -34,19 +34,36 @@ Matěj Mlejnek - xmlejn04}
 
 \newpage
 \setcounter{page}{1}
-\section{Písmo}
-\uv{Pro design tiskoviny, typografickou úpravu, je písmo základ.} \cite{jak_publikovat_napocitaci}
-U určité příležitosti se nehodí použít stejné písmo jako u jiné. Proto pro různé typy 
-dokumentů používáme specifické styly vhodné pro daný typ. \cite{dipl_martin_cerny, typografia_cz}\\ 
-V následujících podsekcích je vypsáno pár atributů písem s příklady, u kterých je napsán příkaz pro~implementaci do \LaTeX u. 
-\subsection{Rodina}
+\section{Úvod}
+V této práci je řešen projekt do předmětu \textbf{IMS - Modelování a simulace} \cite{ims_web} vyučovaném na Fakulta informačních technologií Vysokého učení technického v Brně \cite{fit_web}. Konkrétně se jedná o zadání \textbf{6. Počítačové služby} \cite{zadani_web}.
+
+Tato práce se věnuje problematice vyhledávacích časů nad databází, kde jsme se zaměřili na zkoumání časových rozdílů mezi SQL dotazy a načítáním do RAM paměti s následným procházením po jednotlivých řádcích. Následné vygenerované data analyzujeme a modelujeme na jejich základě //TODO v simlibu
+
+\subsection{Zdroje faktů}
+Jako model jsme si vybrali databázi Postgresql \cite{postgresql_web}. Pro přístup do této databáze jsme zvolili naprogramování aplikace v jazyce JAVA \cite{java_web} ve verzi JDK-1.8.0\_151 \cite{java_jdk_version}, ve které jsme si naprogramovali komunikaci se serverem. Programy pro sběr dat z této komunikace běželi na virtualním stroji Ubuntu 16.04.3 LTS \cite{ubuntu_web} a samotné posílání jednotlivých dotazů bylo zautomatizované pomocí scriptu psaném v GNU Bash version 4.3.48(1)-release (x86\_64-pc-linux-gnu) \cite{bash_web}.
+
+\subsection{Ověření funkčnosti modelu}
+//TODO zdrojová data jsou uz tak validni.
+
+\section{Fakta}
+//TODO naflakat spoustu grafu a popsat co vsecno znamana
+
+?? odchylka
+literatura atd 
+osobni zprostredkovane pozorovani
+
+
+\section{Koncepce modelu}
+
+
+
+
+\section{Rodina}
 Značí styl pro skupinu od sebe odvozených písem. Mezi základní patří: \\ 
 \verb|\textrm| \hspace{0.5cm} \textrm{Roman family} - latinka;\\
 \verb|\textsf| \hspace{0.5cm} \textsf{Sans serif family} - bezpatkové písmo;\\
 \verb|\textttt| \hspace{0.3cm} \texttt{Typewriter family} - strojopisné písmo;
 \cite{latex_kompletni_pruvodce, typograficky_manual}
-
-\newpage
 
 \subsection{Varianty}
 Tvary písem lze dále ovlivnit použitím jejich variant. Mezi základní patří: \\
@@ -62,19 +79,16 @@ Váha písma určuje šířku neboli tloušťku písma. Lze použít např: \\
 \cite{latex_kompletni_pruvodce, typograficky_manual}
 
 \section{\TeX}
-\TeX \- je typografický systém původně určený zejména pro kvalitní sazbu knih s velkým množstvím matematiky. \TeX \- byl Roku 1983 světu darován k volnému používaní jeho tvůrcem D. E. Knuthem. Systém díky kvalitnímu zpracování 
-nepotřeboval od vydání žádnou zásadní změnu ve své koncepci. \\Díky zvyšující se oblíbenosti existuje dnes ohromné množství nadstaveb, knihoven a různých nástrojů, které nám výrazně ujednodušují práci při sepisování nejen odborných publikací.
+\TeX \- je typografický systém původně určený zejména pro kvalitní sazbu  nejen odborných publikací.
 \cite{dipl_martin_cerny}
 
 \section{Bib\TeX}
 Bib\TeX \- je nástroj pro \LaTeX \- pomocí něhož se dájí vytvářet odkazy na použitou literaturu.    \\
-Seznam citací se vytváří pomocí příkazu \verb|\bibliography{jméno souboru}|. Tento soubor obsahuje jednotlivé položky a informace, které jsou pro daný typ zdroje nutné a volitelné. 
-Jednotlivé citace do~textu vkládáme pomocí příkazu \verb|\cite{název navěští}|.
+Seznam citací se vytváří pomocí příkazu \verb|\bibliography{jméno souboru}|. Tentoe pomocí příkazu \verb|\cite{název navěští}|.
 \cite{dipl_michal_janda, bibtex_alex}
 
 \section{DPI - Dots Per Inch}
-DPI je hodnota jejíž velikost určuje počet bodů, vyobrazených na jednom palci ($1~palec = 2,54~cm$) z anglického slova \uv{inch}. Velikost nás zajímá zejména při tisku nebo skenování.
-Pro tisk obyčejného textu nám postačí 100 DPI. U obyčejných spíše méně kvalitnějších obrázků se považuje za minimum 150-200 DPI. U Fotek a podrobnějších objektů se za vhodný standard považuje 300 DPI.
+DPI je hodnota jejíž  300 DPI.
 \cite{computer_casopis, vsellis, repronis_foto}
 
 \pagebreak

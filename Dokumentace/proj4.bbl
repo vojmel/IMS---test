@@ -8,6 +8,50 @@
 \providecommand{\selectlanguage}[1]{\relax}
 \providecommand{\eprint}[2][]{\url{#2}}
 
+\bibitem{ims_web}
+IMS - Modelování a simulace: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{http://www.fit.vutbr.cz/study/course-l.php.cs?id=12167}
+
+
+\bibitem{fit_web}
+Fakulta informačních technologií Vysokého učení technického v Brně: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{http://www.fit.vutbr.cz/}
+
+\bibitem{zadani_web}
+Zadání č.6: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{http://perchta.fit.vutbr.cz:8000/vyuka-ims/42}
+
+\bibitem{postgresql_web}
+Postgresql: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{https://www.postgresql.org/?&}
+
+\bibitem{java_web}
+Java: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{https://java.com/en/download/}
+
+\bibitem{java_jdk_version}
+JDK-1.8.0\_151: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{http://www.oracle.com/technetwork/java/javase/8u151-relnotes-3850493.html}
+
+
+\bibitem{ubuntu_web}
+Ubuntu 16.04.3 LTS: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{http://fridge.ubuntu.com/2017/08/05/ubuntu-16-04-3-lts-released/}
+
+\bibitem{bash_web}
+GNU Bash: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{https://www.gnu.org/software/bash/}
+
+
+
+
+
+
+
+
+
+
+
 \bibitem{typograficky_manual}
 Beran, V.: Typografický manuál. 1994, ISBN 80-901824-0-2, 25--30 s.
 
@@ -39,10 +83,6 @@ Jiří~Kuruc, P.~S.: Dolejte inkoust! In \emph{Computer}, ročník 4|2016,
 \bibitem{typografia_cz}
 Lelek, M.: Krátce ze zahraničí. In \emph{Typografia}, Digirama s.r.o., 2014,
   ISBN 0322-9068, s. 10--12.
-
-\bibitem{repronis_foto}
-Repronis: [online]. [vid.~2016-04-18].
-\newline\urlprefix\url{http://www.repronis.cz/navody/clanek/205-Jak-na-rozliseni-fotografii.html}
 
 \bibitem{vsellis}
 vsellis: [online]. [cit.~2013-02-01] [vid.~2016-04-18].
