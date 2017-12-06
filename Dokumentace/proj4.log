@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.27)  5 DEC 2017 18:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.27)  6 DEC 2017 01:07
 entering extended mode
 **./proj4.tex
 (proj4.tex
@@ -471,24 +471,29 @@ LaTeX Font Info:    ... okay on input line 11.
 [1
 
 {C:/Users/olovo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(proj4.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 38.
+(Font)              <10.95> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 38.
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 38.
-LaTeX Font Info:    Try loading font information for IL2+cmtt on input line 41.
+(Font)              <6> on input line 3.
+)
+\tf@toc=\write3
+\openout3 = `proj4.toc'.
 
+ [2]
+LaTeX Font Info:    Try loading font information for IL2+cmtt on input line 44.
 
-("C:\Program Files\MiKTeX 2.9\tex\cslatex\base\il2cmtt.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\cslatex\base\il2cmtt.fd"
 File: il2cmtt.fd 1997/08/20 CSLaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for IL2+cmss on input line 42.
+LaTeX Font Info:    Try loading font information for IL2+cmss on input line 45.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\cslatex\base\il2cmss.fd"
 File: il2cmss.fd 1997/02/13 CsLaTeX font definitions
-) [1] (proj4.bbl
+) [1] [2] (proj4.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 44--46
 \IL2/cmr/m/n/10.95 URL  $\IL2/cmtt/m/n/10.95 <[]http : / / www . repronis . cz 
 / navody / clanek / 205-[]Jak-[]na-[]rozliseni-[]fotografii .
@@ -500,27 +505,27 @@ Overfull \hbox (13.44144pt too wide) in paragraph at lines 48--50
 / understanding-[]dpi-[]resolution-[]and-[]print-[]vs-[]web-[]images /
  []
 
-) [2] (proj4.aux) ) 
+) [3] (proj4.aux) ) 
 Here is how much of TeX's memory you used:
- 2134 strings out of 493312
- 26422 string characters out of 3138898
- 93565 words of memory out of 3000000
+ 2137 strings out of 493312
+ 26493 string characters out of 3138898
+ 92565 words of memory out of 3000000
  5670 multiletter control sequences out of 15000+200000
  16487 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  25i,4n,31p,299b,258s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\pu
 blic\csfonts\dpi600\csti8.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk
-\ljfour\public\csfonts\dpi657\csbx10.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2
-.9\fonts\pk\ljfour\public\csfonts\dpi657\cscsc10.pk> <C:\Users\olovo\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi657\cssl10.pk> <C:\Users\olovo
-\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi657\csti10.pk> <C:\
-Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi657\csss
+\ljfour\public\csfonts\dpi657\cscsc10.pk> <C:\Users\olovo\AppData\Local\MiKTeX\
+2.9\fonts\pk\ljfour\public\csfonts\dpi657\cssl10.pk> <C:\Users\olovo\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi657\csti10.pk> <C:\Users\olovo
+\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi657\csss10.pk> <C:\
+Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi657\cstt
 10.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\
-dpi657\cstt10.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\publ
-ic\csfonts\dpi600\csbx12.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\public\csfonts\dpi600\csr8.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\
-fonts\pk\ljfour\public\csfonts\dpi657\csr10.pk> <C:\Users\olovo\AppData\Local\M
+dpi600\csbx12.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\publ
+ic\csfonts\dpi600\csr8.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\lj
+four\public\csfonts\dpi657\csr10.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\f
+onts\pk\ljfour\public\csfonts\dpi657\csbx10.pk> <C:\Users\olovo\AppData\Local\M
 iKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi720\csbx12.pk> <C:\Users\olovo\AppD
 ata\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi864\csr17.pk> <C:\Users\
 olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi600\csr17.pk> 
@@ -529,9 +534,9 @@ olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi600\csr17.pk>
 fonts\dpi1493\cscsc10.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 r10.pfb>
-Output written on proj4.pdf (3 pages, 156785 bytes).
+Output written on proj4.pdf (5 pages, 172305 bytes).
 PDF statistics:
- 422 PDF objects out of 1000 (max. 8388607)
+ 463 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
