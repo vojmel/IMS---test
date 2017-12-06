@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.27)  6 DEC 2017 03:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.27)  6 DEC 2017 20:48
 entering extended mode
 **./proj4.tex
 (proj4.tex
@@ -433,26 +433,56 @@ File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen114
+\captionmargin@=\dimen115
+\captionwidth=\dimen116
+\caption@tempdima=\dimen117
+\caption@indent=\dimen118
+\caption@parindent=\dimen119
+\caption@hangindent=\dimen120
+)
+\c@ContinuedFloat=\count92
+)
+\c@subfigure=\count93
+\c@subtable=\count94
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count95
+\float@exts=\toks18
+\float@box=\box26
+\@float@everytoks=\toks19
+\@floatcapt=\box27
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (proj4.aux)
 \openout1 = `proj4.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for IL2/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for IL2/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -490,17 +520,17 @@ LaTeX Font Info:    ... okay on input line 12.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count92
-\scratchdimen=\dimen114
-\scratchbox=\box26
-\nofMPsegments=\count93
-\nofMParguments=\count94
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count95
-\MPscratchDim=\dimen115
-\MPnumerator=\count96
-\makeMPintoPDFobject=\count97
-\everyMPtoPDFconversion=\toks19
+\scratchcounter=\count96
+\scratchdimen=\dimen121
+\scratchbox=\box28
+\nofMPsegments=\count97
+\nofMParguments=\count98
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count99
+\MPscratchDim=\dimen122
+\MPnumerator=\count100
+\makeMPintoPDFobject=\count101
+\everyMPtoPDFconversion=\toks21
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -548,7 +578,11 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-) [1
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ [1
 
 {C:/Users/olovo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (proj4.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -562,39 +596,93 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `proj4.toc'.
 
 
-[2]
-<test.jpg, id=15, 829.59938pt x 546.54187pt>
-File: test.jpg Graphic file (type jpg)
-<use test.jpg>
-Package pdftex.def Info: test.jpg  used on input line 62. on input line 62.
-Package pdftex.def Info: Requested size: 256.0748pt x 168.70068pt on input line
- 62.
-LaTeX Font Info:    Try loading font information for IL2+cmtt on input line 69.
+[2] [1]
+<images/f1-100-75k.png, id=19, 530.73282pt x 392.96812pt>
+File: images/f1-100-75k.png Graphic file (type png)
+<use images/f1-100-75k.png>
+Package pdftex.def Info: images/f1-100-75k.png  used on input line 60. on input
+ line 60.
+Package pdftex.def Info: Requested size: 284.52756pt x 210.67058pt on input lin
+e 60.
+<images/f10-100-75k.png, id=20, 529.98pt x 392.21532pt>
+File: images/f10-100-75k.png Graphic file (type png)
+<use images/f10-100-75k.png>
+Package pdftex.def Info: images/f10-100-75k.png  used on input line 65. on inpu
+t line 65.
+Package pdftex.def Info: Requested size: 284.52756pt x 210.56624pt on input lin
+e 65.
+<images/f100-100-75k.png, id=21, 529.98pt x 391.4625pt>
+File: images/f100-100-75k.png Graphic file (type png)
+<use images/f100-100-75k.png>
+Package pdftex.def Info: images/f100-100-75k.png  used on input line 70. on inp
+ut line 70.
+Package pdftex.def Info: Requested size: 284.52756pt x 210.16208pt on input lin
+e 70.
+<images/f1000-100-75k.png, id=22, 529.98pt x 390.70969pt>
+File: images/f1000-100-75k.png Graphic file (type png)
+<use images/f1000-100-75k.png>
+Package pdftex.def Info: images/f1000-100-75k.png  used on input line 75. on in
+put line 75.
+Package pdftex.def Info: Requested size: 284.52756pt x 209.75792pt on input lin
+e 75.
+ [2 <./images/f1-100-75k.png> <./images/f10-100-75k.png>]
+<images/f1-75k-2kk.png, id=26, 530.73282pt x 390.70969pt>
+File: images/f1-75k-2kk.png Graphic file (type png)
+<use images/f1-75k-2kk.png>
+Package pdftex.def Info: images/f1-75k-2kk.png  used on input line 81. on input
+ line 81.
+Package pdftex.def Info: Requested size: 284.52756pt x 209.45984pt on input lin
+e 81.
+<images/f10-75k-2kk.png, id=27, 529.98pt x 392.21532pt>
+File: images/f10-75k-2kk.png Graphic file (type png)
+<use images/f10-75k-2kk.png>
+Package pdftex.def Info: images/f10-75k-2kk.png  used on input line 86. on inpu
+t line 86.
+Package pdftex.def Info: Requested size: 284.52756pt x 210.56624pt on input lin
+e 86.
+ [3 <./images/f100-100-75k.png> <./images/f1000-100-75k.png>]
+<images/f100-75k-2kk.png, id=31, 529.98pt x 391.4625pt>
+File: images/f100-75k-2kk.png Graphic file (type png)
+<use images/f100-75k-2kk.png>
+Package pdftex.def Info: images/f100-75k-2kk.png  used on input line 92. on inp
+ut line 92.
+Package pdftex.def Info: Requested size: 284.52756pt x 210.16208pt on input lin
+e 92.
+ [4 <./images/f1-75k-2kk.png> <./images/f10-75k-2kk.png>]
+<images/f1000-75k-2kk.png, id=35, 529.98pt x 390.70969pt>
+File: images/f1000-75k-2kk.png Graphic file (type png)
+<use images/f1000-75k-2kk.png>
+Package pdftex.def Info: images/f1000-75k-2kk.png  used on input line 97. on in
+put line 97.
+Package pdftex.def Info: Requested size: 284.52756pt x 209.75792pt on input lin
+e 97.
+ [5 <./images/f100-75k-2kk.png>]
+LaTeX Font Info:    Try loading font information for IL2+cmtt on input line 112
+.
 
- ("C:\Program Files\MiKTeX 2.9\tex\cslatex\base\il2cmtt.fd"
+("C:\Program Files\MiKTeX 2.9\tex\cslatex\base\il2cmtt.fd"
 File: il2cmtt.fd 1997/08/20 CSLaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for IL2+cmss on input line 70.
-
+LaTeX Font Info:    Try loading font information for IL2+cmss on input line 113
+.
 
 ("C:\Program Files\MiKTeX 2.9\tex\cslatex\base\il2cmss.fd"
 File: il2cmss.fd 1997/02/13 CsLaTeX font definitions
-) [1 <./test.jpg>]
-[2] (proj4.bbl
+) [6 <./images/f1000-75k-2kk.png>] [7] (proj4.bbl
 Overfull \hbox (13.44144pt too wide) in paragraph at lines 92--94
 \IL2/cmr/m/n/10.95 URL  $\IL2/cmtt/m/n/10.95 <[]http : / / www . vsellis . com 
 / understanding-[]dpi-[]resolution-[]and-[]print-[]vs-[]web-[]images /
  []
 
-) [3] (proj4.aux) ) 
+) [8] (proj4.aux) ) 
 Here is how much of TeX's memory you used:
- 3313 strings out of 493312
- 43812 string characters out of 3138898
- 115647 words of memory out of 3000000
- 6790 multiletter control sequences out of 15000+200000
+ 4517 strings out of 493312
+ 65560 string characters out of 3138898
+ 138245 words of memory out of 3000000
+ 7973 multiletter control sequences out of 15000+200000
  16487 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,5n,31p,589b,264s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,5n,40p,589b,269s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\pu
 blic\csfonts\dpi600\csti8.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk
 \ljfour\public\csfonts\dpi600\csr8.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9
@@ -613,9 +701,9 @@ olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi600\csr17.pk>
 <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi1244
 \cscsc10.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cs
 fonts\dpi1493\cscsc10.pk>
-Output written on proj4.pdf (5 pages, 234063 bytes).
+Output written on proj4.pdf (10 pages, 262407 bytes).
 PDF statistics:
- 513 PDF objects out of 1000 (max. 8388607)
+ 542 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

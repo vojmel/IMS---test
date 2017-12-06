@@ -4,10 +4,11 @@
 \usepackage[czech]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
 \usepackage{url}
 \providecommand{\uv}[1]{\quotedblbase #1\textquotedblleft}
 \DeclareUrlCommand\url{\def\UrlLeft{<}\def\UrlRight{>} \urlstyle{tt}}
-
 
 \begin{document}
 \thispagestyle{empty}
@@ -52,16 +53,57 @@ Jako model jsme si vybrali databázi Postgresql \cite{postgresql_web}. Pro pří
 literatura atd 
 osobni zprostredkovane pozorovani
 
+\subsection{První běh}
+\newpage
+\begin{figure}[H]
+\centering
+\includegraphics[width=100mm]{images/f1-100-75k.png}
+\caption{LIKEE 1 - 100-75 000}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=100mm]{images/f10-100-75k.png}
+\caption{LIKEE 10 - 100-75 000}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=100mm]{images/f100-100-75k.png}
+\caption{LIKEE 100 - 100-75 000}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=100mm]{images/f1000-100-75k.png}
+\caption{LIKEE 1000 - 100-75 000}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=100mm]{images/f1-75k-2kk.png}
+\caption{LIKEE 1 - 75 000-2 000 000}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=100mm]{images/f10-75k-2kk.png}
+\caption{LIKEE 10 - 75 000-2 000 000}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=100mm]{images/f100-75k-2kk.png}
+\caption{LIKEE 100 - 75 000-2 000 000}
+\end{figure} 
+\begin{figure}[H]
+\centering
+\includegraphics[width=100mm]{images/f1000-75k-2kk.png}
+\caption{LIKEE 1000 - 75 000-2 000 000}
+\end{figure}
+
+\subsection{Vícenásobný běh}
+
+
 
 \section{Koncepce modelu}
 petriho sit
 
-
-\begin{figure}[ht!]
-\centering
-\includegraphics[width=90mm]{test.jpg}
-\caption{A simple caption \label{overflow}}
-\end{figure}
 
 
 \section{Rodina}
