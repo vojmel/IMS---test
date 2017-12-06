@@ -2,10 +2,10 @@
 \contentsline {section}{\numberline {1}\IeC {\'U}vod}{1}
 \contentsline {subsection}{\numberline {1.1}Zdroje fakt\IeC {\r u}}{1}
 \contentsline {subsection}{\numberline {1.2}Ov\IeC {\v e}\IeC {\v r}en\IeC {\'\i } funk\IeC {\v c}nosti modelu}{1}
-\contentsline {subsection}{\numberline {1.3}CO ma mit uvod}{1}
-\contentsline {subsection}{\numberline {1.4}Rodina}{1}
-\contentsline {subsection}{\numberline {1.5}Varianty}{1}
-\contentsline {subsection}{\numberline {1.6}V\IeC {\'a}ha}{1}
-\contentsline {section}{\numberline {2}T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}}{2}
-\contentsline {section}{\numberline {3}BibT\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}}{2}
-\contentsline {section}{\numberline {4}DPI - Dots Per Inch}{2}
+\contentsline {section}{\numberline {2}Fakta}{1}
+\contentsline {section}{\numberline {3}Koncepce modelu}{1}
+\contentsline {section}{\numberline {4}Rodina}{2}
+\contentsline {subsection}{\numberline {4.1}Varianty}{2}
+\contentsline {subsection}{\numberline {4.2}V\IeC {\'a}ha}{2}
+\contentsline {section}{\numberline {5}T\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}}{2}
+\contentsline {section}{\numberline {6}BibT\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}}{2}

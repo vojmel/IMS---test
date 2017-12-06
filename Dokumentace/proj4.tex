@@ -3,6 +3,7 @@
 \usepackage[IL2]{fontenc}
 \usepackage[czech]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
 \usepackage{url}
 \providecommand{\uv}[1]{\quotedblbase #1\textquotedblleft}
 \DeclareUrlCommand\url{\def\UrlLeft{<}\def\UrlRight{>} \urlstyle{tt}}
@@ -37,8 +38,7 @@ Matěj Mlejnek - xmlejn04}
 \section{Úvod}
 V této práci je řešen projekt do předmětu \textbf{IMS - Modelování a simulace} \cite{ims_web} vyučovaném na Fakulta informačních technologií Vysokého učení technického v Brně \cite{fit_web}. Konkrétně se jedná o zadání \textbf{6. Počítačové služby} \cite{zadani_web}.
 
-Tato práce se věnuje problematice vyhledávacích časů nad databází, kde jsme se zaměřili na zkoumání časových rozdílů mezi SQL dotazy a načítáním do RAM paměti s následným procházením po jednotlivých řádcích. Následné vygenerované data analyzujeme a modelujeme na jejich základě //TODO v simlibu
-
+Tato práce se věnuje problematice vyhledávacích časů nad databází, kde jsme se zaměřili na zkoumání časových rozdílů mezi SQL dotazy a načítáním do RAM paměti s následným procházením po jednotlivých řádcích. Následné vygenerované data analyzujeme a modelujeme na jejich základě //TODO v simlibu\cite{simlib_web, simlib_zdroj}
 \subsection{Zdroje faktů}
 Jako model jsme si vybrali databázi Postgresql \cite{postgresql_web}. Pro přístup do této databáze jsme zvolili naprogramování aplikace v jazyce JAVA \cite{java_web} ve verzi JDK-1.8.0\_151 \cite{java_jdk_version}, ve které jsme si naprogramovali komunikaci se serverem. Programy pro sběr dat z této komunikace běželi na virtualním stroji Ubuntu 16.04.3 LTS \cite{ubuntu_web} a samotné posílání jednotlivých dotazů bylo zautomatizované pomocí scriptu psaném v GNU Bash version 4.3.48(1)-release (x86\_64-pc-linux-gnu) \cite{bash_web}.
 
@@ -54,8 +54,14 @@ osobni zprostredkovane pozorovani
 
 
 \section{Koncepce modelu}
+petriho sit
 
 
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=90mm]{test.jpg}
+\caption{A simple caption \label{overflow}}
+\end{figure}
 
 
 \section{Rodina}
@@ -85,15 +91,10 @@ Váha písma určuje šířku neboli tloušťku písma. Lze použít např: \\
 \section{Bib\TeX}
 Bib\TeX \- je nástroj pro \LaTeX \- pomocí něhož se dájí vytvářet odkazy na použitou literaturu.    \\
 Seznam citací se vytváří pomocí příkazu \verb|\bibliography{jméno souboru}|. Tentoe pomocí příkazu \verb|\cite{název navěští}|.
-\cite{dipl_michal_janda, bibtex_alex}
 
-\section{DPI - Dots Per Inch}
-DPI je hodnota jejíž  300 DPI.
-\cite{computer_casopis, vsellis, repronis_foto}
 
 \pagebreak
 \newpage
-
 \bibliographystyle{czechiso}
 \def\refname{Literatura}
 \bibliography{proj4}
