@@ -57,6 +57,58 @@ public class TestApp {
             return;
         }
         
+        
+        
+        
+        // Ziskani dat z db
+        tester.getDataFromDb("rows"+rowNum, coloumns);
+        
+        // cas prvniho selectu
+        long timeFirstSelect = tester.getSelectFirstTime();
+        
+        // cas vytvoreni objektu
+        long timeCreateObjectAll = tester.getCreateObjTime();
+        
+        
+        
+        
+        // filtrace pomoci java
+        tester.filterByJava(coloumn, filterType, value);
+        
+        
+        // cas filtrace java
+        long timeFilterJava = tester.getFilterTime();
+        
+        
+        
+        
+        
+        // select N
+        tester.filterByDb(coloumn, filterType, value);
+        
+        long numOfItems = tester.getItemsCnt();
+        
+        // cas N selectu
+        long timeNSelect = tester.getSelectNTime();
+        
+        // cas vytvoreni objektu
+        long timeCreateObjectFiltred = tester.getCreateObjTime();
+        
+        
+       
+        
+        
+        
+        // odpojeni db
+        tester.disconectDb();
+
+        //                                                                                        Select first db      Filter JAVA       Filter DB          Create all                    Create N
+        System.out.println(ram+";"+rowNum+";"+coloumn+";"+operation+";"+value+";"+numOfItems+";"+timeFirstSelect+";"+timeFilterJava+";"+timeNSelect+";"+timeCreateObjectAll+";"+timeCreateObjectFiltred);
+        
+        
+        
+        /*
+        
         // Porovnova db
         if (by.equalsIgnoreCase("DB")) {
             
@@ -66,6 +118,9 @@ public class TestApp {
             
             // Ziskani dat z db poprve
             long firstTime = tester.filterByDb(coloumn, filterType, value);
+            
+            
+            
             long numOfItems = tester.getItemsCnt();
             
             long avgTime = 0;
@@ -113,7 +168,7 @@ public class TestApp {
             System.out.println("Wrong filtration type: "+by+" use DB or JAVA");
             return; 
         }
-        
+        */
     }
     
 }

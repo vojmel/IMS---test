@@ -31,6 +31,12 @@ public class testFilterSpeed {
     private String user = "postgres";
     private String pass = "postgres";
     
+    private long selectFirstTime = 0;
+    private long selectNTime = 0;
+    private long createObjTime = 0;
+    private long filterTime = 0;
+    
+    
     Connection conn = null;
     
     private String tableName;
@@ -99,6 +105,23 @@ public class testFilterSpeed {
     public void setItemsFiltred(ArrayList<Item> itemsFiltred) {
         this.itemsFiltred = itemsFiltred;
     }
+
+    public long getCreateObjTime() {
+        return createObjTime;
+    }
+
+    public long getFilterTime() {
+        return filterTime;
+    }
+
+    public long getSelectFirstTime() {
+        return selectFirstTime;
+    }
+
+    public long getSelectNTime() {
+        return selectNTime;
+    }
+
     
     
     
@@ -180,6 +203,7 @@ public class testFilterSpeed {
         Statement statement = null;
         
         long start_time = System.nanoTime(); // start time
+        selectFirstTime = 0;
         
         try {
             
@@ -187,6 +211,9 @@ public class testFilterSpeed {
 
             // execute select SQL stetement
             ResultSet rs = statement.executeQuery(selectTableSQL);
+            
+            // ulozeni casu
+            selectFirstTime = (System.nanoTime() - start_time);
             
             // Process result
             processSQLResult(rs);
@@ -252,6 +279,7 @@ public class testFilterSpeed {
         Statement statement = null;
         
         long start_time = System.nanoTime(); // start time
+        selectNTime = 0;
         
         try {
             
@@ -259,6 +287,9 @@ public class testFilterSpeed {
 
             // execute select SQL stetement
             ResultSet rs = statement.executeQuery(selectTableSQL);
+            
+            // ulozeni casu
+            selectNTime = (System.nanoTime() - start_time);
             
             // Process result
             processSQLResult(rs);
@@ -283,6 +314,7 @@ public class testFilterSpeed {
     public long filterByJava(String colounm, conditionType condition, String value) {
         
         long start_time = System.nanoTime(); // start time
+        filterTime = 0;
         
         itemsFiltred.clear();
         
@@ -308,6 +340,7 @@ public class testFilterSpeed {
         }
         
         long end_time = System.nanoTime();
+        filterTime = (end_time - start_time);
         return (end_time - start_time);
     }
     
@@ -316,6 +349,9 @@ public class testFilterSpeed {
     private void processSQLResult(ResultSet rs) {
         
         items.clear();
+        
+        long start_time =  System.nanoTime();
+        createObjTime = 0;
         
         try {
             // process result
@@ -328,6 +364,9 @@ public class testFilterSpeed {
         } catch (SQLException ex) {
             Logger.getLogger(testFilterSpeed.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+        // ulozeni casu
+        createObjTime =  System.nanoTime() - start_time;
     }
     
     
