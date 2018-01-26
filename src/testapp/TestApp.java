@@ -58,6 +58,9 @@ public class TestApp {
         }
         
         
+        tester.setColoumns(coloumns);
+        tester.setTableName("rows"+rowNum);
+        
         
         /*
         
