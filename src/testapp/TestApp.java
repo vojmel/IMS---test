@@ -59,6 +59,8 @@ public class TestApp {
         
         
         
+        /*
+        
         
         // Ziskani dat z db
         tester.getDataFromDb("rows"+rowNum, coloumns);
@@ -82,6 +84,7 @@ public class TestApp {
         
         
         
+        */
         
         // select N
         tester.filterByDb(coloumn, filterType, value);
@@ -103,8 +106,10 @@ public class TestApp {
         tester.disconectDb();
 
         //                                                                                        Select first db      Filter JAVA       Filter DB          Create all                    Create N
-        System.out.println(ram+";"+rowNum+";"+coloumn+";"+operation+";"+value+";"+numOfItems+";"+timeFirstSelect+";"+timeFilterJava+";"+timeNSelect+";"+timeCreateObjectAll+";"+timeCreateObjectFiltred);
+        //System.out.println(ram+";"+rowNum+";"+coloumn+";"+operation+";"+value+";"+numOfItems+";"+timeFirstSelect+";"+timeFilterJava+";"+timeNSelect+";"+timeCreateObjectAll+";"+timeCreateObjectFiltred);
         
+        //                                                                                 first select with presion
+        System.out.println(ram+";"+rowNum+";"+coloumn+";"+operation+";"+value+";"+";"+";"+timeNSelect+";");
         
         
         /*

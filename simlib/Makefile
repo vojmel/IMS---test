@@ -26,6 +26,9 @@ run:
 	./$(EXECUTABLE)_RAM4048 > ./exper/RAM4048.output
 	./$(EXECUTABLE)_RAM8096 > ./exper/RAM8096.output
 
+test:
+	$(CC) $(CFLAGS) $(LDFLAGS) test.cc  -o test
+
 
 
 clean:
