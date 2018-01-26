@@ -109,7 +109,7 @@ public class TestApp {
         //System.out.println(ram+";"+rowNum+";"+coloumn+";"+operation+";"+value+";"+numOfItems+";"+timeFirstSelect+";"+timeFilterJava+";"+timeNSelect+";"+timeCreateObjectAll+";"+timeCreateObjectFiltred);
         
         //                                                                                 first select with presion
-        System.out.println(ram+";"+rowNum+";"+coloumn+";"+operation+";"+value+";"+";"+";"+timeNSelect+";");
+        System.out.println(ram+";"+rowNum+";"+coloumn+";"+operation+";"+value+";"+timeNSelect+";");
         
         
         /*
