@@ -111,8 +111,8 @@ public class TestApp {
         //                                                                                        Select first db      Filter JAVA       Filter DB          Create all                    Create N
         //System.out.println(ram+";"+rowNum+";"+coloumn+";"+operation+";"+value+";"+numOfItems+";"+timeFirstSelect+";"+timeFilterJava+";"+timeNSelect+";"+timeCreateObjectAll+";"+timeCreateObjectFiltred);
         
-        //                                                                                 first select with presion
-        System.out.println(ram+";"+rowNum+";"+coloumn+";"+operation+";"+value+";"+timeNSelect+";");
+        //                                                                    first select with presion    num of items
+        System.out.println(ram+";"+rowNum+";"+coloumn+";"+operation+";"+value+";"+timeNSelect+";"+";"+numOfItems);
         
         
         /*
