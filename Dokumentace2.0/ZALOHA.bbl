@@ -50,5 +50,18 @@ Ubuntu 16.04.3 LTS: [online]. [vid.~2017-12-06].
 GNU Bash: [online]. [vid.~2017-12-06].
 \newline\urlprefix\url{https://www.gnu.org/software/bash/}
 
+\bibitem{openssh}
+OpenSSH: [online]. [vid.~2018-01-05].
+\newline\urlprefix\url{https://man.openbsd.org/ssh.1}
+
+\bibitem{ubuntusysreq}
+Ubuntu system requirements: [online]. [vid.~2018-01-05].
+\newline\urlprefix\url{https://help.ubuntu.com/community/Installation/SystemRequirements}
+
+\bibitem{postgresqlsysreq}
+Postgresql system requirements: [online]. [vid.~2018-01-05].
+\newline\urlprefix\url{https://www.commandprompt.com/blog/postgresql_mininum_requirements/}
+
+
 
 \end{thebibliography}

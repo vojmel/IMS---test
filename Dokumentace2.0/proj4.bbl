@@ -1,0 +1,94 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{ims_web}
+IMS - Modelování a simulace: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{http://www.fit.vutbr.cz/study/course-l.php.cs?id=12167}
+
+
+\bibitem{fit_web}
+Fakulta informačních technologií Vysokého učení technického v Brně: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{http://www.fit.vutbr.cz/}
+
+\bibitem{zadani_web}
+Zadání č.6: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{http://perchta.fit.vutbr.cz:8000/vyuka-ims/42}
+
+\bibitem{simlib_web}
+Simlib: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{http://www.fit.vutbr.cz/~peringer/SIMLIB/}
+
+\bibitem{simlib_zdroj}
+Simlib-3.04-20171004.tar.gz: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{http://www.fit.vutbr.cz/~peringer/SIMLIB/source/}
+
+\bibitem{postgresql_web}
+Postgresql: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{https://www.postgresql.org/?&}
+
+\bibitem{java_web}
+Java: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{https://java.com/en/download/}
+
+\bibitem{java_jdk_version}
+JDK-1.8.0\_151: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{http://www.oracle.com/technetwork/java/javase/8u151-relnotes-3850493.html}
+
+
+\bibitem{ubuntu_web}
+Ubuntu 16.04.3 LTS: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{http://fridge.ubuntu.com/2017/08/05/ubuntu-16-04-3-lts-released/}
+
+\bibitem{bash_web}
+GNU Bash: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{https://www.gnu.org/software/bash/}
+
+\bibitem{openssh}
+OpenSSH: [online]. [vid.~2018-01-05].
+\newline\urlprefix\url{https://man.openbsd.org/ssh.1}
+
+\bibitem{ubuntusysreq}
+Ubuntu system requirements: [online]. [vid.~2018-01-05].
+\newline\urlprefix\url{https://help.ubuntu.com/community/Installation/SystemRequirements}
+
+\bibitem{postgresqlsysreq}
+Postgresql system requirements: [online]. [vid.~2018-01-05].
+\newline\urlprefix\url{https://www.commandprompt.com/blog/postgresql_mininum_requirements/}
+
+\bibitem{postgresqllicence}
+The PostgreSQL Licence: [online]. [vid.~2018-01-05].
+\newline\urlprefix\url{https://opensource.org/licenses/postgresql}
+
+\bibitem{oracle}
+Oracle Database Server: [online]. [vid.~2018-01-05].
+\newline\urlprefix\url{https://www.oracle.com/database/index.html}
+
+\bibitem{csvgenerator}
+Csv generator: [online]. [vid.~2018-01-05].
+\newline\urlprefix\url{http://www.convertcsv.com/generate-test-data.htm}
+
+\bibitem{pgadmin}
+PG Admin 3 v. 1.22.2: [online]. [vid.~2018-01-05].
+\newline\urlprefix\url{https://www.postgresql.org/ftp/pgadmin/pgadmin3/v1.22.2/win32/}
+
+
+\bibitem{javalike}
+JAVA funkce Startswith(): [online]. [vid.~2018-01-05].
+\newline\urlprefix\url{https://www.tutorialspoint.com/java/java_string_startswith.htm}
+
+\bibitem{sqllike}
+SQL dotaz LIKE: [online]. [vid.~2018-01-05].
+\newline\urlprefix\url{https://www.w3schools.com/sql/sql_like.asp}
+
+\bibitem{polregres}
+Online Polynomial Regression: [online]. [vid.~2018-01-05].
+\newline\urlprefix\url{http://www.xuru.org/rt/PR.asp#CopyPaste}
+
+\end{thebibliography}

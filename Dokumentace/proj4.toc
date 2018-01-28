@@ -1,9 +1,0 @@
-\select@language {czech}
-\contentsline {section}{\numberline {1}\IeC {\'U}vod}{1}
-\contentsline {subsection}{\numberline {1.1}Zdroje fakt\IeC {\r u}}{1}
-\contentsline {subsection}{\numberline {1.2}Ov\IeC {\v e}\IeC {\v r}en\IeC {\'\i } funk\IeC {\v c}nosti modelu}{1}
-\contentsline {section}{\numberline {2}Fakta}{1}
-\contentsline {subsection}{\numberline {2.1}V\IeC {\'\i }cen\IeC {\'a}sobn\IeC {\'y} b\IeC {\v e}h}{1}
-\contentsline {section}{\numberline {3}Koncepce modelu}{6}
-\contentsline {subsection}{\numberline {3.1}Petriho s\IeC {\'\i }t}{6}
-\contentsline {section}{\numberline {4}Z\IeC {\'a}v\IeC {\v e}r}{6}
