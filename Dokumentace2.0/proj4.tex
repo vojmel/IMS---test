@@ -160,11 +160,17 @@ Původně jsme plánovali pracovat s tabulkami velkými až 10 000 000, to jsme 
 \subsubsection{Automatizace pomocí BASH}
 Z bash scriptu byl volán JAVA program [link] postupně po jednom tak aby byla provedena kombinace všech vstupních parametrů z předchozí sekce(RAM, TABLES,LIKEE). Naměřené hodnoty jsme ukládali do formátu csv. Při 
 \subsubsection{Naměření hodnot JAVA}
-JAVA DELALA TO A TO A VYHODILA TO JAKO VYSLEDEK V TAK A TAK 6 DOB VYHODILA A TY SE ZPRACOVAVALI
+Pro získávání dat jsme vytvořili program v jazyce JAVA (viz.\textit{/dist/testApp.jar}). V tomto programu spuštěném na VM2CLIENT se připojujeme na databázový server Postgresql běžícím na VM1SERVER. Naměřili jsme si tyto hodnoty:
 
-Pro získávání dat jsme vytvořili program v jazyce JAVA (viz. přiložení kód….). V tomto programu se připojujeme na databázový server. Zkoumáme zde reálný  systém na zaklade hodnot nad nim .
+\begin{itemize}
+\item Doba selectu z db bez cache
+\item Doba selectu z db s cache
+\item Doba selectu z db bez cache a s filtrací
+\item Doba selectu z db s cache a s filtraci
+\item Doba vytvoření objektů v JAVA
+\item Doba filtrace v JAVA
 
-BLBLBAALBLAL
+\end{itemize}
  
 \subsubsection{Zpracování naměřených hodnot}
 Výstupní \textit{csv} soubory jsme si prevedli do formatu \textit{xlsx} kde jsme nad jednotlivými časy vytvářeli grafy. Na obrázku číslo \ref{sec:obr1} můžete vidět dobu vytváření objektů všech prvků z tabulky na základě její velikosti. Z grafu je jasně vidět, jak se jednotlivé časy mění při změně velikosti tabulky. 
@@ -177,16 +183,25 @@ Výstupní \textit{csv} soubory jsme si prevedli do formatu \textit{xlsx} kde js
 \label{sec:obr1}
 \end{figure}
 
-\paragraph{Normální rozložení} Potřebovali jsme na základě těchto hodnot vytvořit funkce podle který by jsme mohli určit přibližnou hodnotu daného prvku v určitém bodě, u který nemáme hodnoty naměřené. Rozhodli jsme, 
+\begin{figure}[H]
+\centering
+\includegraphics[width=150mm]{images/100-TABLE-SELECT-ALL-342.png}
+\caption{100-TABLE-SELECT-ALL - rozložení při 342 měřeních - vertikální osa značí počet výskytů a horozontální značí 10\^(-2) sekund zaokrouhleno na celá čísla}
+\label{sec:obr3}
+\end{figure}
 
-JAK??????????????????????????????????????
+\paragraph{Normální rozložení} Potřebovali jsme na základě těchto hodnot vytvořit funkce podle kterých, by jsme mohli určit přibližnou hodnotu různě velkých tabulek, pro které nemáme hodnoty naměřené. Na základě měření jsme rozhodli, že veškeré měřené hodnoty mají normálního rozložení (například tabulka o velikosti 100, nad kterou byl volán Select všech rádků (viz. obrázek\ref{sec:obr3}).
+U každého jednotlivého grafu znázorňující naměřené hodnoty (viz. obrázek\ref{sec:obr1}) bylo zapotřebí zvážit zda není vhodné ho rozdělit na více intervalů, kde by  vytvořená funkce počítala přesněji. Z hodnot ze zvoleného intervalu jsme přes online nástroj pro vytváření polynomu viz. \cite{polregres} vždy získali dány polynom většinou čtvrtého řádu, do kterého jsme potom dosadili původní velikosti tabulek. Původní graf hodnot a hodnoty z nových funkcí jsme si dali dohromady do grafu na porovnání. Na obrázku číslo \ref{sec:obr2} můžeme vidět jak žlutá barva znázorňuje body spočítané z nově vytvořených funkcí. 
 
-že veškeré grafy jsou normálního rozložení. U každého jednotlivého grafu bylo zapotřebí zvážit zda není vhodné ho rozdělit na více intervalů, kde by  vytvořená funkce počítala přesněji. Z hodnot ze zvoleného intervalu jsme přes online nástroj pro vytváření polynomu viz. \cite{polregres} vždy získali dány polynom většinou čtvrtého řádu, do kterého jsme potom dosadili původní velikosti tabulek. Původní graf hodnot a hodnoty z nových funkcí jsme si dali dohromady do grafu na porovnání. Na obrázku číslo \ref{sec:obr2} mužeme vidět jak zlutá barva znázorňuje body spočítané z nově vytvořených funkcí. 
-
-
-Pro jednotlivé intervaly jsme si u každého bodu co jsme měli naměřenou hodnotu spočítali hodnotu funkce, a tím zjistili chybu v jednotlivých bodech. Tyto chyby stačilo zprůměrovat a získali jsme hodnotu rozptylu.
-
-STřední hodnota??????????????????????????????
+\paragraph{rozptyl} Pro jednotlivé intervaly jsme si u každého bodu co jsme měli naměřenou hodnotu spočítali hodnotu funkce, a tím zjistili chybu v jednotlivých bodech. Tyto chyby stačilo zprůměrovat a získali jsme hodnotu rozptylu. 
+\paragraph{DX - odchylka} Z vypočítaného rozptylu odečítáme jednotlivé časy 
+\paragraph{EX - Střední hodnota} Střední hodnotu jsme zjistili z četnosti výskytů hodnot na intervalu \ref{sec:obr3}) pro danou vytvořenou funkce.
+ ????????????????????????????? 
+https://matematika.cz/smerodatna-odchylka
+??????????????
+nope my jsme vzali ty body na těch intervalech a aproximovali jsme je. Pak z té aproximace vypadla funkce. Tu funkci jsme pak použili na vypočítání EX a od toho EX jsme pak udělali průměrnou odchylku, kterou jsme použili jako rozptyl.
+Chtělo by to tam pak i přidat ty vzorečky jak máme
+na normální rozdělení
 
 \begin{figure}[H]
 \centering
@@ -197,6 +212,8 @@ STřední hodnota??????????????????????????????
 
 \subsection{Ověření funkčnosti modelu}
 Validita modelu byla ověřována porovnáváním dat, které jsme vygenerovali s daty naměřenými.
+
+analyzujeme a modelujeme v simlibu\cite{simlib_web, simlib_zdroj}
 
 \subsection{Petriho sít}
 
@@ -210,10 +227,6 @@ Potom nějaká věta o tom, že v naměřených datech, jsme zjistili, že nakon
 
 Pozn. Pokud používáme přesné filtrování pomocí databáze, tak bychom mohli i pro větší tabulky zvolit menší RAM. 
 
-//STUFFFF
-
-
-procházením po jednotlivých řádcích. Následné vygenerované data analyzujeme a modelujeme v simlibu\cite{simlib_web, simlib_zdroj}
 
 \pagebreak
 \newpage
