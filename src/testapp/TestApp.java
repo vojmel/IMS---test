@@ -89,13 +89,20 @@ public class TestApp {
         
         */
         
-        // select N
-        tester.filterByDb(coloumn, filterType, value);
+        
+        // Ziskani dat z db
+        tester.getDataFromDb("rows"+rowNum, coloumns);
+        
+        
+        // Ziskani dat z db
+        tester.getDataFromDb("rows"+rowNum, coloumns);
+        
+        
         
         long numOfItems = tester.getItemsCnt();
         
         // cas N selectu
-        long timeNSelect = tester.getSelectNTime();
+        long timeNSelect = tester.getSelectFirstTime();
         
         // cas vytvoreni objektu
         long timeCreateObjectFiltred = tester.getCreateObjTime();
@@ -112,8 +119,11 @@ public class TestApp {
         //System.out.println(ram+";"+rowNum+";"+coloumn+";"+operation+";"+value+";"+numOfItems+";"+timeFirstSelect+";"+timeFilterJava+";"+timeNSelect+";"+timeCreateObjectAll+";"+timeCreateObjectFiltred);
         
         //                                                                    first select with presion    num of items
-        System.out.println(ram+";"+rowNum+";"+coloumn+";"+operation+";"+value+";"+timeNSelect+";"+";"+numOfItems);
+        //System.out.println(ram+";"+rowNum+";"+coloumn+";"+operation+";"+value+";"+timeNSelect+";"+";"+numOfItems);
         
+        
+        //                                                                       time select N 0
+        System.out.println(ram+";"+rowNum+";"+coloumn+";"+operation+";"+value+";"+timeNSelect+";"+";"+numOfItems);
         
         /*
         
