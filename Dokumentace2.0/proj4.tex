@@ -4,6 +4,7 @@
 \usepackage[czech]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage[export]{adjustbox}
 \usepackage{subcaption}
 \usepackage{float}
 \usepackage{url}
@@ -178,14 +179,14 @@ Výstupní \textit{csv} soubory jsme si prevedli do formatu \textit{xlsx} kde js
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=150mm]{images/LIKEE-1-CREATE-ALL.png}
+\includegraphics[width=150mm, frame]{images/LIKEE-1-CREATE-ALL.png}
 \caption{LIKEE-1-CREATE-ALL - 5x měřená hodnota pro každou velikost tabulky - Vertikální osa značí čas v nanosekundách a horozontální značí velikost tabulky.}
 \label{sec:obr1}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=150mm]{images/100-TABLE-SELECT-ALL-342.png}
+\includegraphics[width=150mm, frame]{images/100-TABLE-SELECT-ALL-342.png}
 \caption{100-TABLE-SELECT-ALL - rozložení při 342 měřeních - vertikální osa značí počet výskytů a horozontální značí $10^{-2}$ sekund zaokrouhleno na celá čísla}
 \label{sec:obr3}
 \end{figure}
@@ -205,7 +206,7 @@ na normální rozdělení
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=150mm]{images/LIKEE-1-CREATE-ALL-FUNCTIONS.png}
+\includegraphics[width=150mm, frame]{images/LIKEE-1-CREATE-ALL-FUNCTIONS.png}
 \caption{LIKEE-1-CREATE-ALL-FUNCTIONS - 5x měřená hodnota pro každou velikost tabulky - Vertikální osa značí čas v nanosekundách a horozontální značí velikost tabulky.}
 \label{sec:obr2}
 \end{figure}
@@ -218,6 +219,30 @@ analyzujeme a modelujeme v simlibu\cite{simlib_web, simlib_zdroj}
 \subsection{Petriho sít}
 
 \section{Experimenty}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=150mm, frame]{images/FIRST-DB.png}
+\caption{FIRST - DB - LIKEE 0-1-10-100-1000 - Vertikální osa čas $10^{-3}$ sekund a horozontální značí velikost tabulek.}
+\label{sec:obr5}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=150mm, frame]{images/FIRST-JAVA.png}
+\caption{FIRST - JAVA - LIKEE 0-1-10-100-1000 - Vertikální osa čas $10^{-3}$ sekund a horozontální značí velikost tabulek.}
+\label{sec:obr6}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=150mm, frame]{images/FIRST-DB-JAVA-INTERSECTION.png}
+\caption{FIRST - DB AND JAVA - LIKEE 0-1-10-100-1000 TABLE 0-40000 - Vertikální osa čas $10^{-3}$ sekund a horozontální značí velikost tabulek.}
+\label{sec:obr4}
+\end{figure}
+
+
 
 \section{Závěr}
 

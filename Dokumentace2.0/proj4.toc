@@ -14,6 +14,6 @@
 \contentsline {paragraph}{DX - odchylka}{5}
 \contentsline {paragraph}{EX - St\IeC {\v r}edn\IeC {\'\i } hodnota}{5}
 \contentsline {subsection}{\numberline {2.2}Ov\IeC {\v e}\IeC {\v r}en\IeC {\'\i } funk\IeC {\v c}nosti modelu}{6}
-\contentsline {subsection}{\numberline {2.3}Petriho s\IeC {\'\i }t}{6}
-\contentsline {section}{\numberline {3}Experimenty}{6}
-\contentsline {section}{\numberline {4}Z\IeC {\'a}v\IeC {\v e}r}{6}
+\contentsline {subsection}{\numberline {2.3}Petriho s\IeC {\'\i }t}{7}
+\contentsline {section}{\numberline {3}Experimenty}{7}
+\contentsline {section}{\numberline {4}Z\IeC {\'a}v\IeC {\v e}r}{9}
