@@ -94,16 +94,16 @@ Na VM2CLIENT tedy běžel BASH \cite{bash_web} script \textit{functions.sh}, kte
 V rámci automatických testů se také před každým měřením musel zaslat požadavek pro vymazání cache paměti v databázi na straně serveru, toto je vyřešeno připojením přes OpenSSH rozhrani (OpenSSH\_7.2p2 Ubuntu-4ubuntu2.4, OpenSSL 1.0.2g  1 Mar 2016) \cite{openssh} \textit{sshclear.sh} připojením se na VM1SERVER a odtud zavoláním scriptu \textit{clearcache.sh}.
 
 \subsubsection{Přesnost vyhledávání}
-Jako hodnotu pro vyhledávání jsme si zvolili index(od 1 do velikosti tabulky po 1). Rozhodli jsme se filtraci provádět podle začátku řetězce jeho hodnoty. Tato filtrace byla zvolena z toho důvodu, že se nejvíce podobá přístupu do databáze k vyhledání určité položky, aneb jak s databází pracuje normální uživatel. Při práci s databázi byla tato filtrace prováděna příkazem LIKE 'prefix\%' \cite{sqllike} a v JAVA startsWith(String prefix) \cite{javalike}(dále se na obě funkce budeme zároveň odkazovat jako na pseudofunkci LIKEE(prefix)).
 
+Jako hodnotu pro vyhledávání jsme si zvolili index(od 1 do velikosti tabulky po 1). Rozhodli jsme se filtraci provádět podle začátku řetězce jeho hodnoty. Tato filtrace byla zvolena z toho důvodu, že se nejvíce podobá přístupu do databáze k vyhledání určité položky, aneb jak s databází pracuje normální uživatel. Při práci s databázi byla tato filtrace prováděna příkazem LIKE 'prefix\%' \cite{sqllike} a v JAVA startsWith(String prefix) \cite{javalike} (dále se na obě funkce budeme zároveň odkazovat jako na pseudofunkci LIKEE(prefix)).
+\\
 Příklady LIKEE() nad řetězci:
-
 $$LIKEE("AH") > ("AHOJ") => True$$
 $$LIKEE("1") > ("10") => True$$
 $$LIKEE("0") > ("10") => False$$
 $$LIKEE("1") > ("1") => True$$
 \\
-Tudíž se dá jednoduše určit v našem případě, že když pracujeme s indexovanou tabulkou nad jejím indexem u každého řádku zjistíme jestli je začátkem a na konci vrátíme hodnotu pro kolik řádků to platí:
+Jelikož v našem projektu pracujeme s indexovanými tabulkami, tak můžeme vyhledávat počet výskytů indexů se stejným začátkem:
 $$LIKEE("1") > TABLE(100) => 12$$
 $$LIKEE("1") > TABLE(1000) => 111$$
 $$LIKEE("10") > TABLE(1000) => 2$$
@@ -131,32 +131,8 @@ $$boto.co.uk,-275370638258.9952,6304284025402256,true,N$$
 Velikost jednotlivých řádků tabulek by neměla ovlivnit poměr časů vyhledávání, ale slouží k tomu, aby jsme vygenerovali vstupní data k simulaci ve kterých uvidíme větší hodnoty s menší pravděpodobností vzniklých nepřesností.
 
 Tyto data jsme umístili na VM1SERVER, tak že jsme na něm spustili databázi a připojili jsme se na ní pomocí PG ADMIN 3 \cite{pgadmin} a nahráli zde tabulky ze kterých jsme plánovali získávat data.
-
-Finální tabulky ze kterých jsme zkoumali data měli velikosti:
-\begin{center}
-\begin{tabular}{ |l| }
-  \hline
-	TABLES \\
-  \hline
-100 \\
-500 \\
-1000 \\
-2000 \\
-5000 \\
-7500 \\
-10000 \\
-20000 \\
-30000 \\
-50000 \\
-75000 \\
-100000 \\
-200000 \\
-250000 \\
-  \hline
-\end{tabular}
-\end{center}
-
-Původně jsme plánovali pracovat s tabulkami velkými až 10 000 000, to jsme ovšem velice rychle zavrhli z důvodu velké časové náročnosti výpočtů.
+\paragraph{Tabulky}
+Původně jsme plánovali pracovat s tabulkami velkými až 10 000 000, to jsme ovšem velice rychle zavrhli z důvodu velké časové náročnosti výpočtů. Nakonec jsme pracovali s tabulkami do velikosti 250 000.
 
 \subsubsection{Automatizace pomocí BASH}
 Z bash scriptu byl volán JAVA program [link] postupně po jednom tak aby byla provedena kombinace všech vstupních parametrů z předchozí sekce(RAM, TABLES,LIKEE). Naměřené hodnoty jsme ukládali do formátu csv. Při 
@@ -174,7 +150,7 @@ Pro získávání dat jsme vytvořili program v jazyce JAVA (viz.\textit{/dist/t
 \end{itemize}
  
 \subsubsection{Zpracování naměřených hodnot}
-Výstupní \textit{csv} soubory jsme si prevedli do formatu \textit{xlsx} kde jsme nad jednotlivými časy vytvářeli grafy. Na obrázku číslo \ref{sec:obr1} můžete vidět dobu vytváření objektů všech prvků z tabulky na základě její velikosti. Z grafu je jasně vidět, jak se jednotlivé časy mění při změně velikosti tabulky. 
+Výstupní \textit{csv} soubory jsme si prevedli do tabulkového formatu \textit{xlsx} pomocí aplikace Microsoft Excel \cite{excel}, kde jsme nad jednotlivými časy vytvářeli grafy. Na obrázku číslo \ref{sec:obr1} můžete vidět dobu vytváření objektů všech prvků z tabulky na základě její velikosti. Z grafu je jasně vidět, jak se jednotlivé časy mění při změně velikosti tabulky. 
 
 
 \begin{figure}[H]
@@ -186,13 +162,22 @@ Výstupní \textit{csv} soubory jsme si prevedli do formatu \textit{xlsx} kde js
 
 \begin{figure}[H]
 \centering
+\includegraphics[width=150mm, frame]{images/LIKEE-1-CREATE-ALL-FUNCTIONS.png}
+\caption{LIKEE-1-CREATE-ALL-FUNCTIONS - 5x měřená hodnota pro každou velikost tabulky - Vertikální osa značí čas v nanosekundách a horozontální značí velikost tabulky.}
+\label{sec:obr2}
+\end{figure}
+
+\paragraph{Normální rozložení} Potřebovali jsme na základě těchto hodnot vytvořit funkce podle kterých, by jsme mohli určit přibližnou hodnotu různě velkých tabulek, pro které nemáme hodnoty naměřené. Na základě měření jsme rozhodli, že veškeré měřené hodnoty mají normálního rozložení (například tabulka o velikosti 100, nad kterou byl volán Select všech rádků (viz. obrázek \textbf{č. \ref{sec:obr3})}.
+U každého jednotlivého grafu znázorňující naměřené hodnoty (viz. obrázek\ref{sec:obr1}) bylo zapotřebí zvážit zda není vhodné ho rozdělit na více intervalů, kde by  vytvořená funkce počítala přesněji. Z hodnot ze zvoleného intervalu jsme přes online nástroj pro vytváření polynomu viz. \cite{polregres} vždy získali dány polynom většinou čtvrtého řádu, do kterého jsme potom dosadili původní velikosti tabulek. Původní graf hodnot a hodnoty z nových funkcí jsme si dali dohromady do grafu na porovnání. Na obrázku číslo \ref{sec:obr2} můžeme vidět jak žlutá barva znázorňuje body spočítané z nově vytvořených funkcí. 
+
+
+\begin{figure}[H]
+\centering
 \includegraphics[width=150mm, frame]{images/100-TABLE-SELECT-ALL-342.png}
 \caption{100-TABLE-SELECT-ALL - rozložení při 342 měřeních - vertikální osa značí počet výskytů a horozontální značí $10^{-2}$ sekund zaokrouhleno na celá čísla}
 \label{sec:obr3}
 \end{figure}
 
-\paragraph{Normální rozložení} Potřebovali jsme na základě těchto hodnot vytvořit funkce podle kterých, by jsme mohli určit přibližnou hodnotu různě velkých tabulek, pro které nemáme hodnoty naměřené. Na základě měření jsme rozhodli, že veškeré měřené hodnoty mají normálního rozložení (například tabulka o velikosti 100, nad kterou byl volán Select všech rádků (viz. obrázek\ref{sec:obr3}).
-U každého jednotlivého grafu znázorňující naměřené hodnoty (viz. obrázek\ref{sec:obr1}) bylo zapotřebí zvážit zda není vhodné ho rozdělit na více intervalů, kde by  vytvořená funkce počítala přesněji. Z hodnot ze zvoleného intervalu jsme přes online nástroj pro vytváření polynomu viz. \cite{polregres} vždy získali dány polynom většinou čtvrtého řádu, do kterého jsme potom dosadili původní velikosti tabulek. Původní graf hodnot a hodnoty z nových funkcí jsme si dali dohromady do grafu na porovnání. Na obrázku číslo \ref{sec:obr2} můžeme vidět jak žlutá barva znázorňuje body spočítané z nově vytvořených funkcí. 
 
 \paragraph{rozptyl} Pro jednotlivé intervaly jsme si u každého bodu co jsme měli naměřenou hodnotu spočítali hodnotu funkce, a tím zjistili chybu v jednotlivých bodech. Tyto chyby stačilo zprůměrovat a získali jsme hodnotu rozptylu. 
 \paragraph{DX - odchylka} Z vypočítaného rozptylu odečítáme jednotlivé časy 
@@ -204,11 +189,12 @@ nope my jsme vzali ty body na těch intervalech a aproximovali jsme je. Pak z t�
 Chtělo by to tam pak i přidat ty vzorečky jak máme
 na normální rozdělení
 
+
 \begin{figure}[H]
 \centering
-\includegraphics[width=150mm, frame]{images/LIKEE-1-CREATE-ALL-FUNCTIONS.png}
-\caption{LIKEE-1-CREATE-ALL-FUNCTIONS - 5x měřená hodnota pro každou velikost tabulky - Vertikální osa značí čas v nanosekundách a horozontální značí velikost tabulky.}
-\label{sec:obr2}
+\includegraphics[width=150mm, frame]{images/VYPOCET-KRIVEK.png}
+\caption{pres reference https://arachnoid.com/polysolve/}
+\label{sec:obr9}
 \end{figure}
 
 \subsection{Ověření funkčnosti modelu}
@@ -216,7 +202,23 @@ Validita modelu byla ověřována porovnáváním dat, které jsme vygenerovali 
 
 analyzujeme a modelujeme v simlibu\cite{simlib_web, simlib_zdroj}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=150mm]{images/JAVA-DB-komunikace.png}
+\caption{Komunikace JAVA-DB}
+\label{sec:obr8}
+\end{figure}
+
+
+
 \subsection{Petriho sít}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=220mm,  angle =90]{images/IMS-projekt.png}
+\caption{Petriho sít}
+\label{sec:obr7}
+\end{figure}
 
 \section{Experimenty}
 
