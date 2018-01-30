@@ -10,11 +10,11 @@
 \contentsline {subsubsection}{\numberline {2.1.4}Automatizace pomoc\IeC {\'\i } BASH}{3}
 \contentsline {subsubsection}{\numberline {2.1.5}Nam\IeC {\v e}\IeC {\v r}en\IeC {\'\i } hodnot JAVA}{3}
 \contentsline {subsubsection}{\numberline {2.1.6}Zpracov\IeC {\'a}n\IeC {\'\i } nam\IeC {\v e}\IeC {\v r}en\IeC {\'y}ch hodnot}{4}
-\contentsline {paragraph}{Norm\IeC {\'a}ln\IeC {\'\i } rozlo\IeC {\v z}en\IeC {\'\i }}{5}
+\contentsline {paragraph}{Norm\IeC {\'a}ln\IeC {\'\i } rozlo\IeC {\v z}en\IeC {\'\i }}{4}
 \contentsline {paragraph}{rozptyl}{6}
 \contentsline {paragraph}{DX - odchylka}{6}
 \contentsline {paragraph}{EX - St\IeC {\v r}edn\IeC {\'\i } hodnota}{6}
-\contentsline {subsection}{\numberline {2.2}Ov\IeC {\v e}\IeC {\v r}en\IeC {\'\i } funk\IeC {\v c}nosti modelu}{7}
-\contentsline {subsection}{\numberline {2.3}Petriho s\IeC {\'\i }t}{8}
-\contentsline {section}{\numberline {3}Experimenty}{9}
-\contentsline {section}{\numberline {4}Z\IeC {\'a}v\IeC {\v e}r}{10}
+\contentsline {subsection}{\numberline {2.2}Ov\IeC {\v e}\IeC {\v r}en\IeC {\'\i } funk\IeC {\v c}nosti modelu}{6}
+\contentsline {subsection}{\numberline {2.3}Petriho s\IeC {\'\i }t}{7}
+\contentsline {section}{\numberline {3}Experimenty}{8}
+\contentsline {section}{\numberline {4}Z\IeC {\'a}v\IeC {\v e}r}{9}

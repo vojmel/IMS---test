@@ -160,16 +160,8 @@ Výstupní \textit{csv} soubory jsme si prevedli do tabulkového formatu \textit
 \label{sec:obr1}
 \end{figure}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=150mm, frame]{images/LIKEE-1-CREATE-ALL-FUNCTIONS.png}
-\caption{LIKEE-1-CREATE-ALL-FUNCTIONS - 5x měřená hodnota pro každou velikost tabulky - Vertikální osa značí čas v nanosekundách a horozontální značí velikost tabulky.}
-\label{sec:obr2}
-\end{figure}
-
-\paragraph{Normální rozložení} Potřebovali jsme na základě těchto hodnot vytvořit funkce podle kterých, by jsme mohli určit přibližnou hodnotu různě velkých tabulek, pro které nemáme hodnoty naměřené. Na základě měření jsme rozhodli, že veškeré měřené hodnoty mají normálního rozložení (například tabulka o velikosti 100, nad kterou byl volán Select všech rádků (viz. obrázek \textbf{č. \ref{sec:obr3})}.
-U každého jednotlivého grafu znázorňující naměřené hodnoty (viz. obrázek\ref{sec:obr1}) bylo zapotřebí zvážit zda není vhodné ho rozdělit na více intervalů, kde by  vytvořená funkce počítala přesněji. Z hodnot ze zvoleného intervalu jsme přes online nástroj pro vytváření polynomu viz. \cite{polregres} vždy získali dány polynom většinou čtvrtého řádu, do kterého jsme potom dosadili původní velikosti tabulek. Původní graf hodnot a hodnoty z nových funkcí jsme si dali dohromady do grafu na porovnání. Na obrázku číslo \ref{sec:obr2} můžeme vidět jak žlutá barva znázorňuje body spočítané z nově vytvořených funkcí. 
-
+\paragraph{Normální rozložení} Potřebovali jsme na základě těchto hodnot vytvořit funkce podle kterých, by jsme mohli určit přibližnou hodnotu různě velkých tabulek, pro které nemáme hodnoty naměřené. Na základě měření jsme rozhodli, že veškeré měřené hodnoty mají normálního rozložení (například tabulka o velikosti 100, nad kterou byl volán Select všech rádků (viz. obrázek \textbf{číslo \ref{sec:obr3}}).
+U každého jednotlivého grafu znázorňující naměřené hodnoty (viz. obrázek\ref{sec:obr1}) bylo zapotřebí zvážit zda není vhodné ho rozdělit na více intervalů, kde by  vytvořená funkce počítala přesněji. Z hodnot ze zvoleného intervalu jsme přes online nástroj pro vytváření polynomu viz. \cite{polregres} vždy získali dány polynom většinou čtvrtého řádu, do kterého jsme potom dosadili původní velikosti tabulek. Původní graf hodnot a hodnoty z nových funkcí jsme si dali dohromady do grafu na porovnání. Na obrázku \textbf{číslo \ref{sec:obr2}} můžeme vidět jak žlutá barva znázorňuje body spočítané z nově vytvořených funkcí. 
 
 \begin{figure}[H]
 \centering
@@ -178,11 +170,18 @@ U každého jednotlivého grafu znázorňující naměřené hodnoty (viz. obrá
 \label{sec:obr3}
 \end{figure}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=150mm, frame]{images/LIKEE-1-CREATE-ALL-FUNCTIONS.png}
+\caption{LIKEE-1-CREATE-ALL-FUNCTIONS - 5x měřená hodnota pro každou velikost tabulky - Vertikální osa značí čas v nanosekundách a horozontální značí velikost tabulky.}
+\label{sec:obr2}
+\end{figure}
+
 
 \paragraph{rozptyl} Pro jednotlivé intervaly jsme si u každého bodu co jsme měli naměřenou hodnotu spočítali hodnotu funkce, a tím zjistili chybu v jednotlivých bodech. Tyto chyby stačilo zprůměrovat a získali jsme hodnotu rozptylu. 
 \paragraph{DX - odchylka} Z vypočítaného rozptylu odečítáme jednotlivé časy 
-\paragraph{EX - Střední hodnota} Střední hodnotu jsme zjistili z četnosti výskytů hodnot na intervalu \ref{sec:obr3}) pro danou vytvořenou funkce.
- ????????????????????????????? 
+\paragraph{EX - Střední hodnota} Střední hodnotu jsme zjistili z četnosti výskytů hodnot na intervalu (obrázek \textbf{číslo \ref{sec:obr3}}) pro danou vytvořenou funkce.
+ ???????????????? 
 https://matematika.cz/smerodatna-odchylka
 ??????????????
 nope my jsme vzali ty body na těch intervalech a aproximovali jsme je. Pak z té aproximace vypadla funkce. Tu funkci jsme pak použili na vypočítání EX a od toho EX jsme pak udělali průměrnou odchylku, kterou jsme použili jako rozptyl.
@@ -193,7 +192,7 @@ na normální rozdělení
 \begin{figure}[H]
 \centering
 \includegraphics[width=150mm, frame]{images/VYPOCET-KRIVEK.png}
-\caption{pres reference https://arachnoid.com/polysolve/}
+\caption{Příklad proložení naměřených hodnot krivkou zapoužítí online nástroje \textit{arachnoid} \cite{polysolv} při vytváření polynomů}
 \label{sec:obr9}
 \end{figure}
 

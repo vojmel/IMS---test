@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.27)  30 JAN 2018 23:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.27)  31 JAN 2018 00:55
 entering extended mode
 **./proj4.tex
 (proj4.tex
@@ -662,105 +662,103 @@ Package pdftex.def Info: images/LIKEE-1-CREATE-ALL.png  used on input line 158.
 Package pdftex.def Info: Requested size: 426.79134pt x 280.99704pt on input lin
 e 158.
  [3]
-<images/LIKEE-1-CREATE-ALL-FUNCTIONS.png, id=30, 612.03656pt x 424.58624pt>
-File: images/LIKEE-1-CREATE-ALL-FUNCTIONS.png Graphic file (type png)
-<use images/LIKEE-1-CREATE-ALL-FUNCTIONS.png>
-Package pdftex.def Info: images/LIKEE-1-CREATE-ALL-FUNCTIONS.png  used on input
- line 165. on input line 165.
-Package pdftex.def Info: Requested size: 426.79134pt x 296.07457pt on input lin
-e 165.
-
-[4 <./images/LIKEE-1-CREATE-ALL.png>]
-<images/100-TABLE-SELECT-ALL-342.png, id=34, 399.74344pt x 239.39438pt>
+<images/100-TABLE-SELECT-ALL-342.png, id=30, 399.74344pt x 239.39438pt>
 File: images/100-TABLE-SELECT-ALL-342.png Graphic file (type png)
 <use images/100-TABLE-SELECT-ALL-342.png>
 Package pdftex.def Info: images/100-TABLE-SELECT-ALL-342.png  used on input lin
-e 176. on input line 176.
+e 168. on input line 168.
 Package pdftex.def Info: Requested size: 426.79134pt x 255.60516pt on input lin
-e 176.
- [5 <./images/LIKEE-1-CREATE-ALL-FUNCTIONS.png>]
-<images/VYPOCET-KRIVEK.png, id=40, 651.18282pt x 377.15906pt>
+e 168.
+
+[4 <./images/LIKEE-1-CREATE-ALL.png>]
+<images/LIKEE-1-CREATE-ALL-FUNCTIONS.png, id=35, 612.03656pt x 424.58624pt>
+File: images/LIKEE-1-CREATE-ALL-FUNCTIONS.png Graphic file (type png)
+<use images/LIKEE-1-CREATE-ALL-FUNCTIONS.png>
+Package pdftex.def Info: images/LIKEE-1-CREATE-ALL-FUNCTIONS.png  used on input
+ line 175. on input line 175.
+Package pdftex.def Info: Requested size: 426.79134pt x 296.07457pt on input lin
+e 175.
+ [5 <./images/100-TABLE-SELECT-ALL-342.png> <./images/LIKEE-1-CREATE-ALL-FUNCTI
+ONS.png>]
+<images/VYPOCET-KRIVEK.png, id=43, 651.18282pt x 377.15906pt>
 File: images/VYPOCET-KRIVEK.png Graphic file (type png)
 <use images/VYPOCET-KRIVEK.png>
-Package pdftex.def Info: images/VYPOCET-KRIVEK.png  used on input line 195. on 
-input line 195.
+Package pdftex.def Info: images/VYPOCET-KRIVEK.png  used on input line 194. on 
+input line 194.
 Package pdftex.def Info: Requested size: 426.79134pt x 247.19925pt on input lin
-e 195.
- [6 <./images/100-TABLE-SELECT-ALL-342.png>]
-<images/JAVA-DB-komunikace.png, id=47, 543.02875pt x 81.30376pt>
+e 194.
+<images/JAVA-DB-komunikace.png, id=44, 543.02875pt x 81.30376pt>
 File: images/JAVA-DB-komunikace.png Graphic file (type png)
 <use images/JAVA-DB-komunikace.png>
-Package pdftex.def Info: images/JAVA-DB-komunikace.png  used on input line 207.
- on input line 207.
+Package pdftex.def Info: images/JAVA-DB-komunikace.png  used on input line 206.
+ on input line 206.
 Package pdftex.def Info: Requested size: 426.79134pt x 63.90297pt on input line
- 207.
-<images/IMS-projekt.png, id=48, 1414.28375pt x 981.6675pt>
+ 206.
+<images/IMS-projekt.png, id=45, 1414.28375pt x 981.6675pt>
 File: images/IMS-projekt.png Graphic file (type png)
 <use images/IMS-projekt.png>
-Package pdftex.def Info: images/IMS-projekt.png  used on input line 218. on inp
-ut line 218.
+Package pdftex.def Info: images/IMS-projekt.png  used on input line 217. on inp
+ut line 217.
 Package pdftex.def Info: Requested size: 625.96062pt x 434.48146pt on input lin
-e 218.
- [7 <./images/VYPOCET-KRIVEK.png> <./images/JAVA-DB-komunikace.png>]
-<images/FIRST-DB.png, id=54, 614.295pt x 390.70969pt>
+e 217.
+ [6 <./images/VYPOCET-KRIVEK.png> <./images/JAVA-DB-komunikace.png>]
+<images/FIRST-DB.png, id=51, 614.295pt x 390.70969pt>
 File: images/FIRST-DB.png Graphic file (type png)
 <use images/FIRST-DB.png>
-Package pdftex.def Info: images/FIRST-DB.png  used on input line 228. on input 
-line 228.
+Package pdftex.def Info: images/FIRST-DB.png  used on input line 227. on input 
+line 227.
 Package pdftex.def Info: Requested size: 426.79134pt x 271.456pt on input line 
-228.
- [8 <./images/IMS-projekt.png>]
-<images/FIRST-JAVA.png, id=59, 609.77812pt x 390.70969pt>
+227.
+ [7 <./images/IMS-projekt.png>]
+<images/FIRST-JAVA.png, id=56, 609.77812pt x 390.70969pt>
 File: images/FIRST-JAVA.png Graphic file (type png)
 <use images/FIRST-JAVA.png>
-Package pdftex.def Info: images/FIRST-JAVA.png  used on input line 235. on inpu
-t line 235.
+Package pdftex.def Info: images/FIRST-JAVA.png  used on input line 234. on inpu
+t line 234.
 Package pdftex.def Info: Requested size: 426.79134pt x 273.47105pt on input lin
-e 235.
-<images/FIRST-DB-JAVA-INTERSECTION.png, id=60, 609.02531pt x 390.70969pt>
+e 234.
+<images/FIRST-DB-JAVA-INTERSECTION.png, id=57, 609.02531pt x 390.70969pt>
 File: images/FIRST-DB-JAVA-INTERSECTION.png Graphic file (type png)
 <use images/FIRST-DB-JAVA-INTERSECTION.png>
 Package pdftex.def Info: images/FIRST-DB-JAVA-INTERSECTION.png  used on input l
-ine 242. on input line 242.
+ine 241. on input line 241.
 Package pdftex.def Info: Requested size: 426.79134pt x 273.81088pt on input lin
-e 242.
- [9 <./images/FIRST-DB.png> <./images/FIRST-JAVA.png>] [10 <./images/FIRST-DB-J
-AVA-INTERSECTION.png>] (proj4.bbl
+e 241.
+ [8 <./images/FIRST-DB.png> <./images/FIRST-JAVA.png>] [9 <./images/FIRST-DB-JA
+VA-INTERSECTION.png>] (proj4.bbl
 LaTeX Font Info:    Try loading font information for IL2+cmtt on input line 13.
 
-
-("C:\Program Files\MiKTeX 2.9\tex\cslatex\base\il2cmtt.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\cslatex\base\il2cmtt.fd"
 File: il2cmtt.fd 1997/08/20 CSLaTeX font definitions
-) [11]) [12]
-(proj4.aux) ) 
+) [10]) [11] (proj4.aux) ) 
 Here is how much of TeX's memory you used:
- 5280 strings out of 493312
- 77509 string characters out of 3138898
- 154130 words of memory out of 3000000
- 8704 multiletter control sequences out of 15000+200000
+ 5281 strings out of 493312
+ 77519 string characters out of 3138898
+ 154134 words of memory out of 3000000
+ 8705 multiletter control sequences out of 15000+200000
  13569 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,7n,94p,737b,343s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\c
-sfonts\dpi657\cstt10.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
-ur\public\csfonts\dpi657\csti10.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fo
-nts\pk\ljfour\public\csfonts\dpi600\csbx12.pk> <C:\Users\olovo\AppData\Local\Mi
-KTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi657\csr10.pk> <C:\Users\olovo\AppDat
-a\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi657\csbx10.pk> <C:\Users\o
-lovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi720\csbx12.pk> 
-<C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi864\
-csr17.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfon
-ts\dpi600\csr17.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\pu
-blic\csfonts\dpi1244\cscsc10.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\public\csfonts\dpi1493\cscsc10.pk><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-msy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
->
-Output written on proj4.pdf (14 pages, 461907 bytes).
+ <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\lj
+four\public\csfonts\dpi657\cstt10.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\
+fonts\pk\ljfour\public\csfonts\dpi657\csti10.pk> <C:\Users\olovo\AppData\Local\
+MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi600\csbx12.pk> <C:\Users\olovo\App
+Data\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi657\csr10.pk> <C:\Users
+\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi657\csbx10.pk
+> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\csfonts\dpi72
+0\csbx12.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cs
+fonts\dpi864\csr17.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\public\csfonts\dpi600\csr17.pk> <C:\Users\olovo\AppData\Local\MiKTeX\2.9\fonts
+\pk\ljfour\public\csfonts\dpi1244\cscsc10.pk> <C:\Users\olovo\AppData\Local\MiK
+TeX\2.9\fonts\pk\ljfour\public\csfonts\dpi1493\cscsc10.pk><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmsy8.pfb>
+Output written on proj4.pdf (13 pages, 461202 bytes).
 PDF statistics:
- 510 PDF objects out of 1000 (max. 8388607)
+ 506 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

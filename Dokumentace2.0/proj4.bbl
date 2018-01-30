@@ -88,11 +88,17 @@ SQL dotaz LIKE: [online]. [vid.~2018-01-05].
 \newline\urlprefix\url{https://www.w3schools.com/sql/sql_like.asp}
 
 \bibitem{polregres}
-Online Polynomial Regression: [online]. [vid.~2018-01-05].
+Online Polynomial Regression - Xuru: [online]. [vid.~2018-01-05].
 \newline\urlprefix\url{http://www.xuru.org/rt/PR.asp#CopyPaste}
+
+\bibitem{polysolv}
+Online Polynomial Regression - Arachnoid: [online]. [vid.~2018-01-05].
+\newline\urlprefix\url{https://arachnoid.com/polysolve/}
 
 \bibitem{excel}
 Microsoft Excel: [online]. [vid.~2018-01-05].
 \newline\urlprefix\url{https://support.office.com/cs-cz/excel}
+
+
 
 \end{thebibliography}
