@@ -90,6 +90,23 @@ public class TestApp {
         */
         
         
+        
+        // Ziskani dat z db
+        tester.getDataFromDb("rows"+rowNum, coloumns);
+        
+        tester.getCreateObjTime();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /*
         // Ziskani dat z db
         tester.getDataFromDb("rows"+rowNum, coloumns);
         

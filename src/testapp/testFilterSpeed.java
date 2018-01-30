@@ -181,6 +181,48 @@ public class testFilterSpeed {
     }
     
     
+    
+    public void testObjCreate() {
+        
+        // priprava sql
+        String selectTableSQL = "SELECT "+coloumns+" from "+tableName;
+        //System.out.println("SQL:"+selectTableSQL);
+        
+        Statement statement = null;
+        
+        try {
+            
+            statement = conn.createStatement();
+
+            // execute select SQL stetement
+            ResultSet rs = statement.executeQuery(selectTableSQL);
+            
+            final ResultSetMetaData meta = rs.getMetaData();
+            
+            rs.next();
+            
+        
+            for (int i = 0; i < 10000000; i++) {
+                long start_time = System.nanoTime();
+                Item itemm = new Item(rs);
+                System.out.println("Create Item;"+(System.nanoTime()-start_time)+";");
+            }
+        
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            
+        } finally {
+            if (statement != null) {
+                try {
+                    statement.close();
+                } catch (SQLException ex) {
+                    Logger.getLogger(testFilterSpeed.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+    }
+    
+    
     /*
     *
     * tableName = nazev tabulky
