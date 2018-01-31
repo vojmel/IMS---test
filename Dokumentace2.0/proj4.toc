@@ -4,17 +4,31 @@
 \contentsline {subsection}{\numberline {2.1}Pr\IeC {\r u}b\IeC {\v e}h sb\IeC {\v e}ru dat}{1}
 \contentsline {paragraph}{OS parametry}{1}
 \contentsline {subsubsection}{\numberline {2.1.1}P\IeC {\v r}esnost vyhled\IeC {\'a}v\IeC {\'a}n\IeC {\'\i }}{2}
-\contentsline {subsubsection}{\numberline {2.1.2}RAM pam\IeC {\v e}t}{2}
+\contentsline {paragraph}{LIKEE}{2}
+\contentsline {subsubsection}{\numberline {2.1.2}RAM pam\IeC {\v e}t}{3}
 \contentsline {subsubsection}{\numberline {2.1.3}Vygenerov\IeC {\'a}n\IeC {\'\i } datab\IeC {\'a}ze}{3}
 \contentsline {paragraph}{Tabulky}{3}
 \contentsline {subsubsection}{\numberline {2.1.4}Automatizace pomoc\IeC {\'\i } BASH}{3}
 \contentsline {subsubsection}{\numberline {2.1.5}Nam\IeC {\v e}\IeC {\v r}en\IeC {\'\i } hodnot JAVA}{3}
-\contentsline {subsubsection}{\numberline {2.1.6}Zpracov\IeC {\'a}n\IeC {\'\i } nam\IeC {\v e}\IeC {\v r}en\IeC {\'y}ch hodnot}{4}
+\contentsline {subsection}{\numberline {2.2}Zpracov\IeC {\'a}n\IeC {\'\i } nam\IeC {\v e}\IeC {\v r}en\IeC {\'y}ch hodnot}{4}
 \contentsline {paragraph}{Norm\IeC {\'a}ln\IeC {\'\i } rozlo\IeC {\v z}en\IeC {\'\i }}{4}
-\contentsline {paragraph}{rozptyl}{6}
 \contentsline {paragraph}{DX - odchylka}{6}
 \contentsline {paragraph}{EX - St\IeC {\v r}edn\IeC {\'\i } hodnota}{6}
-\contentsline {subsection}{\numberline {2.2}Ov\IeC {\v e}\IeC {\v r}en\IeC {\'\i } funk\IeC {\v c}nosti modelu}{6}
-\contentsline {subsection}{\numberline {2.3}Petriho s\IeC {\'\i }t}{7}
-\contentsline {section}{\numberline {3}Experimenty}{8}
-\contentsline {section}{\numberline {4}Z\IeC {\'a}v\IeC {\v e}r}{9}
+\contentsline {section}{\numberline {3}Koncepce modelu}{6}
+\contentsline {subsection}{\numberline {3.1}Komunikace JAVA a datab\IeC {\'a}ze}{6}
+\contentsline {subsection}{\numberline {3.2}Simulace experimentu}{7}
+\contentsline {subsection}{\numberline {3.3}Architekt\IeC {\r u}ra sim modelu}{7}
+\contentsline {subsection}{\numberline {3.4}Konceptu\IeC {\'a}ln\IeC {\'\i }ho modelu na simula\IeC {\v c}n\IeC {\'\i }}{7}
+\contentsline {subsubsection}{\numberline {3.4.1}Mapov\IeC {\'a}n\IeC {\'\i } konceptu\IeC {\'a}ln\IeC {\'\i }ho modelu na simula\IeC {\v c}n\IeC {\'\i }}{7}
+\contentsline {subsection}{\numberline {3.5}Zpracov\IeC {\'a}n\IeC {\'\i } po\IeC {\v z}adavku}{8}
+\contentsline {subsection}{\numberline {3.6}Petriho s\IeC {\'\i }t}{8}
+\contentsline {paragraph}{Filtrov\IeC {\'a}n\IeC {\'\i }}{8}
+\contentsline {section}{\numberline {4}Simlib}{10}
+\contentsline {section}{\numberline {5}Experimenty}{10}
+\contentsline {subsection}{\numberline {5.1}Podstata simula\IeC {\v c}n\IeC {\'\i }ch experiment\IeC {\r u} a jejich pr\IeC {\r u}b\IeC {\v e}h}{10}
+\contentsline {subsection}{\numberline {5.2}P\IeC {\v r}\IeC {\'\i }klady}{10}
+\contentsline {subsubsection}{\numberline {5.2.1}SELECT FIRST MEMORY}{10}
+\contentsline {subsubsection}{\numberline {5.2.2}P\IeC {\v r}\IeC {\'\i }klad ze \IeC {\v z}ivota}{12}
+\contentsline {subsubsection}{\numberline {5.2.3}Dal\IeC {\v s}\IeC {\'\i }:}{12}
+\contentsline {subsection}{\numberline {5.3}V\IeC {\'y}sledky/Grafy}{12}
+\contentsline {section}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{13}

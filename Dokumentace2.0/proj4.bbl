@@ -25,6 +25,11 @@ Zadání č.6: [online]. [vid.~2017-12-06].
 Simlib: [online]. [vid.~2017-12-06].
 \newline\urlprefix\url{http://www.fit.vutbr.cz/~peringer/SIMLIB/}
 
+\bibitem{ims-prednasky}
+Modelovani a simulace - Petr Peringer - peringer AT fit.vutbr.cz, Martin Hruby - hrubym AT fit.vutbr.cz: [online]. [vid.~2017-12-06].
+\newline\urlprefix\url{http://www.fit.vutbr.cz/study/courses/IMS/public/prednasky/IMS.pdf}
+
+
 \bibitem{simlib_zdroj}
 Simlib-3.04-20171004.tar.gz: [online]. [vid.~2017-12-06].
 \newline\urlprefix\url{http://www.fit.vutbr.cz/~peringer/SIMLIB/source/}
@@ -99,6 +104,17 @@ Online Polynomial Regression - Arachnoid: [online]. [vid.~2018-01-05].
 Microsoft Excel: [online]. [vid.~2018-01-05].
 \newline\urlprefix\url{https://support.office.com/cs-cz/excel}
 
+\bibitem{connectivity}
+Java Database Connectivity: [online]. [vid.~2018-01-05].
+\newline\urlprefix\url{https://cs.wikipedia.org/wiki/Java_Database_Connectivity}
+
+\bibitem{jdbc}
+PostgreSQL JDBC: [online]. [vid.~2018-01-05].
+\newline\urlprefix\url{https://jdbc.postgresql.org/}
+
+\bibitem{c++}
+C++: [online]. [vid.~2018-01-05].
+\newline\urlprefix\url{https://cs.wikipedia.org/wiki/C%2B%2B}
 
 
 \end{thebibliography}
