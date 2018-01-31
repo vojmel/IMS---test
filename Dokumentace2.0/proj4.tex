@@ -95,7 +95,7 @@ V rámci automatických testů se také před každým měřením musel zaslat p
 
 \subsubsection{Přesnost vyhledávání}
 
-Jako hodnotu pro vyhledávání jsme si zvolili index(od 1 do velikosti tabulky po 1). Rozhodli jsme se filtraci provádět podle začátku řetězce jeho hodnoty. Tato filtrace byla zvolena z toho důvodu, že se nejvíce podobá přístupu do databáze k vyhledání určité položky, aneb jak s databází pracuje normální uživatel. Při práci s databázi byla tato filtrace prováděna příkazem LIKE 'prefix\%' \cite{sqllike} a v JAVA startsWith(String prefix) \cite{javalike} (dále se na obě funkce budeme zároveň odkazovat jako na pseudofunkci LIKEE(prefix)).
+Jako sloupec pro vyhledávání jsme si zvolili index jednotlivých tabulek "seq", který pro jednotlivé řádky tabulky nabýval hodnot od 1 do počtu řádků. Rozhodli jsme se filtraci provádět podle začátku řetězce jeho hodnoty. Tato filtrace byla zvolena z toho důvodu, že se nejvíce podobá přístupu do databáze k vyhledání určité položky, aneb jak s databází pracuje normální uživatel. Při práci s databázi byla tato filtrace prováděna příkazem LIKE 'prefix\%' \cite{sqllike} a v JAVA startsWith(String prefix) \cite{javalike} (dále se na obě funkce budeme zároveň odkazovat jako na pseudofunkci LIKEE(prefix)).
 \\
 Příklady LIKEE() nad řetězci:
 $$LIKEE("AH") > ("AHOJ") => True$$
@@ -195,7 +195,7 @@ U každého jednotlivého grafu znázorňující naměřené hodnoty (viz. obrá
 
 
 \subsection{Komunikace JAVA a databáze}
-Na obrázcích \textbf{č. \ref{sec:obr8}} a \textbf{č. \ref{sec:obr10}} je znázorněna komunikace mezi JAVou a databází za pomoci JDBC - API pro programovací jazyk Java, který definuje jednotné rozhraní pro přístup k relačním databázím \cite{connectivity}. Pro přístup ke konkrétnímu databázovému serveru je potřeba JDBC driver (ovladač), který poskytuje tvůrce databázového serveru. Pro náši PostgreSQL databázi dostupný na oficiálních stránkách \cite{jdbc}.
+Na obrázcích \textbf{č. \ref{sec:obr8}} je znázorněna komunikace mezi JAVou a databázovým serverem za pomoci JDBC - API pro programovací jazyk Java, který definuje jednotné rozhraní pro přístup k relačním databázím \cite{connectivity}. Pro přístup ke konkrétnímu databázovému serveru je potřeba JDBC driver (ovladač), který poskytuje tvůrce databázového serveru. Pro náši PostgreSQL databázi dostupný na oficiálních stránkách \cite{jdbc}.
 
 \begin{figure}[H]
 \centering
@@ -204,17 +204,17 @@ Na obrázcích \textbf{č. \ref{sec:obr8}} a \textbf{č. \ref{sec:obr10}} je zn�
 \label{sec:obr8}
 \end{figure}
 
+\subsection{Simulace experimentu} 
+	Simulace experimentu je popsána na obrázku \textbf{č. \ref{sec:obr10}}.
+	 Jednotlvé experimenty (viz. kapitola \textbf{Experimenty \ref{sec:experimenty}}) nám představují seznam požadavků (viz. kapitola \textbf{Experimenty vysvětlení požadavků \ref{sec:experimenty}}). 
+	Bereme postupně požadavky a získáváme informace o velikosti tabulky a přesnosti filtrování viz. \textbf{LIKEE \ref{sec:likee}}. Na základě těchto informací se zeptáme jestli je tato tabulka v cache databáze a jestli je v paměti JAVY. Tyto čtyři hodnoty pak pošleme do procesu na zpracování jednoho požadavku. Stopujeme si čas jak dlouho trvá pro JAVU a Databázi zpracování požadavku. Jednotlivé doby trvání zpracování požadavku dáváme do výstupního souboru pro daný experimentu. % U některých experimentů jsou i na konci sumy (<<definice sumy>>) pro jednotlivé metody k porovnání.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=150mm]{images/JAVA-DB-schema.png}
-\caption{Schéma JAVA-DB}
+\caption{Schéma JAVA-DB - zpracování všech požadavků}
 \label{sec:obr10}
 \end{figure}
-
-\subsection{Simulace experimentu} 
-	%Simulace experimentu je popsána na obrázku (<<obrázek experimentu>>).
-	 Jednotlvé experimenty (viz. kapitola \textbf{Experimenty \ref{sec:experimenty}}) nám představují seznam požadavků (viz. kapitola \textbf{Experimenty vysvětlení požadavků \ref{sec:experimenty}}). 
-	Bereme postupně požadavky a získáváme informace o velikosti tabulky a přesnosti filtrování viz. \textbf{LIKEE \ref{sec:likee}}. Na základě těchto informací se zeptáme jestli je tato tabulka v cache databáze a jestli je v paměti JAVY. Tyto čtyři hodnoty pak pošleme do procesu na zpracování jednoho požadavku. Stopujeme si čas jak dlouho trvá pro JAVU a Databázi zpracování požadavku. Jednotlivé doby trvání zpracování požadavku dáváme do výstupního souboru pro daný experimentu. % U některých experimentů jsou i na konci sumy (<<definice sumy>>) pro jednotlivé metody k porovnání.
 
 
 \subsection{Architektůra sim modelu}
@@ -289,13 +289,15 @@ Filtrování \textbf{Databáze} (SQL dotazy) je složena ze dvou částí:
 \newpage
 
 \section{Simlib} \label{sec:simlib}
-Program v simlibu\cite{simlib_web, simlib_zdroj} je rozdělen na dvě hlavní větve znázorňující model pro filtraci dat přes JAVu a přes Databázový server. Jednotlivé doby vyhledání jsou zakresleny a jejich průběhy popsány v kapitole \textbf{Petriho síte \ref{petrinetwork}}. Na začátku programu se na základě předem určených dat, nad kterými se budou provádět simulace (zvolených experimentů) vytvoří fronty pro větve Javy a databáze. Na základě hodnot spočítaných z funkcí, které jsme získali při analýze vstupních dat (viz. kapitola \textbf{Zpracování naměřených hodnot \ref{zprachodnot}}) propočítáváme doby trvání.
+Program v simlibu \cite{simlib_web, simlib_zdroj} zpracovává jednotlivé experimenty podle definice z \textbf{Příklady \ref{priklady}}.
+Na začátku programu se ze vstupních dat načtou vstupní parametry experimentu a průběh experimentu (seznam požadavků). 
+Potom si nagenerujeme procesy (jeden proces představuje jeden požadavek od klienta) pro JAVU a Databázi, kdy jednotlivé procesy pomocí obslužné linky (každá možnost filtrování má jednu svou linku) o velikosti 1 čekají než se zpracuje předešlý proces. Docílíme tak postupného zpracování požadavků. Podle definice vstupních parametrů vkládáme do výstupního souboru časy zpracování jednotlivých požadavků a konečný celkový čas.
 
 \section{Experimenty} \label{sec:experimenty}
 \subsection{Podstata simulačních experimentů a jejich průběh}
 Vytvořili jsme několik experimentů. Chceme na nich ukázat, při jakých parametrech se vyplatí filtrovat data v databázi a kdy se nám vyplatí si načíst celou tabulku a data si pak filtrovat v javě.
 
-\subsection{Příklady}
+\subsection{Příklady} \label{priklady}
 
 \subsubsection{SELECT FIRST MEMORY}
 Na obrázcích \ref{sec:obr5}, \ref{sec:obr6}, \ref{sec:obr4} jsou znázorněny průběhy dob vyhledávání v JAVA oproti Databázi. Jedná se o experiment s nenacachovanými hodnotami (FIRST). Na obrázcích můžeme videt jak se jednotlivé selecty chovají. JAVA jelikož není nacachovaná bude pro filtraci  s jakoukoliv přesností mít velice podobný průběh. Databáze ovšem jasně znázorňuje, že čas za který, při přesnějším vyhledávání, proběhne je mnohem menší.

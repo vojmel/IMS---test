@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.27)  31 JAN 2018 06:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.27)  31 JAN 2018 08:30
 entering extended mode
 **./proj4.tex
 (proj4.tex
@@ -694,15 +694,15 @@ Package pdftex.def Info: images/JAVA-DB-komunikace.png  used on input line 202.
  on input line 202.
 Package pdftex.def Info: Requested size: 426.79134pt x 63.90297pt on input line
  202.
-<images/JAVA-DB-schema.png, id=45, 453.19313pt x 231.11343pt>
+ [6 <./images/VYPOCET-KRIVEK.png> <./images/JAVA-DB-komunikace.png>]
+<images/JAVA-DB-schema.png, id=50, 453.19313pt x 231.11343pt>
 File: images/JAVA-DB-schema.png Graphic file (type png)
 <use images/JAVA-DB-schema.png>
-Package pdftex.def Info: images/JAVA-DB-schema.png  used on input line 209. on 
-input line 209.
+Package pdftex.def Info: images/JAVA-DB-schema.png  used on input line 214. on 
+input line 214.
 Package pdftex.def Info: Requested size: 426.79134pt x 217.64868pt on input lin
-e 209.
- [6 <./images/VYPOCET-KRIVEK.png> <./images/JAVA-DB-komunikace.png>] [7 <./imag
-es/JAVA-DB-schema.png>] [8]
+e 214.
+ [7 <./images/JAVA-DB-schema.png>] [8]
 <images/IMS-projekt.png, id=57, 1414.28375pt x 981.6675pt>
 File: images/IMS-projekt.png Graphic file (type png)
 <use images/IMS-projekt.png>
@@ -715,33 +715,33 @@ e 285.
 <images/FIRST-DB.png, id=62, 614.295pt x 390.70969pt>
 File: images/FIRST-DB.png Graphic file (type png)
 <use images/FIRST-DB.png>
-Package pdftex.def Info: images/FIRST-DB.png  used on input line 305. on input 
-line 305.
+Package pdftex.def Info: images/FIRST-DB.png  used on input line 307. on input 
+line 307.
 Package pdftex.def Info: Requested size: 426.79134pt x 271.456pt on input line 
-305.
+307.
 <images/FIRST-JAVA.png, id=63, 609.77812pt x 390.70969pt>
 File: images/FIRST-JAVA.png Graphic file (type png)
 <use images/FIRST-JAVA.png>
-Package pdftex.def Info: images/FIRST-JAVA.png  used on input line 312. on inpu
-t line 312.
+Package pdftex.def Info: images/FIRST-JAVA.png  used on input line 314. on inpu
+t line 314.
 Package pdftex.def Info: Requested size: 426.79134pt x 273.47105pt on input lin
-e 312.
+e 314.
  [10 <./images/FIRST-DB.png>]
 <images/FIRST-DB-JAVA-INTERSECTION.png, id=68, 609.02531pt x 390.70969pt>
 File: images/FIRST-DB-JAVA-INTERSECTION.png Graphic file (type png)
 <use images/FIRST-DB-JAVA-INTERSECTION.png>
 Package pdftex.def Info: images/FIRST-DB-JAVA-INTERSECTION.png  used on input l
-ine 319. on input line 319.
+ine 321. on input line 321.
 Package pdftex.def Info: Requested size: 426.79134pt x 273.81088pt on input lin
-e 319.
+e 321.
  [11 <./images/FIRST-JAVA.png> <./images/FIRST-DB-JAVA-INTERSECTION.png>]
 <images/JAVA-DB-prolnuti.png, id=75, 478.78876pt x 355.3275pt>
 File: images/JAVA-DB-prolnuti.png Graphic file (type png)
 <use images/JAVA-DB-prolnuti.png>
-Package pdftex.def Info: images/JAVA-DB-prolnuti.png  used on input line 385. o
-n input line 385.
+Package pdftex.def Info: images/JAVA-DB-prolnuti.png  used on input line 387. o
+n input line 387.
 Package pdftex.def Info: Requested size: 426.79134pt x 316.73927pt on input lin
-e 385.
+e 387.
  [12] [13 <./images/JAVA-DB-prolnuti.png>] (proj4.bbl
 LaTeX Font Info:    Try loading font information for IL2+cmtt on input line 13.
 
@@ -751,10 +751,10 @@ File: il2cmtt.fd 1997/08/20 CSLaTeX font definitions
 ) [14]) [15]
 (proj4.aux) ) 
 Here is how much of TeX's memory you used:
- 5302 strings out of 493312
- 77932 string characters out of 3138898
- 154226 words of memory out of 3000000
- 8724 multiletter control sequences out of 15000+200000
+ 5304 strings out of 493312
+ 77955 string characters out of 3138898
+ 154237 words of memory out of 3000000
+ 8726 multiletter control sequences out of 15000+200000
  13569 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,7n,94p,737b,341s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -775,9 +775,9 @@ ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 msy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 >
-Output written on proj4.pdf (17 pages, 529138 bytes).
+Output written on proj4.pdf (17 pages, 528823 bytes).
 PDF statistics:
- 563 PDF objects out of 1000 (max. 8388607)
+ 562 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
